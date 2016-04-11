@@ -1,0 +1,4 @@
+C:\Users\Xinnk\Documents\Visual Studio 2015\Projects\wpfServerGUI\sharedObjects\bin\Debug\sharedObjects.dll
+C:\Users\Xinnk\Documents\Visual Studio 2015\Projects\wpfServerGUI\sharedObjects\bin\Debug\sharedObjects.pdb
+C:\Users\Xinnk\Documents\Visual Studio 2015\Projects\wpfServerGUI\sharedObjects\obj\Debug\sharedObjects.dll
+C:\Users\Xinnk\Documents\Visual Studio 2015\Projects\wpfServerGUI\sharedObjects\obj\Debug\sharedObjects.pdb

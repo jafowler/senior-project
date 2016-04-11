@@ -1,0 +1,104 @@
+﻿Installing assembly 'C:\Users\Xinnk\Documents\Visual Studio 2015\Projects\wpfServerGUI\Whatever\obj\Debug\Install.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\Xinnk\Documents\Visual Studio 2015\Projects\wpfServerGUI\Whatever\obj\Debug\Install.InstallLog
+   assemblypath = C:\Users\Xinnk\Documents\Visual Studio 2015\Projects\wpfServerGUI\Whatever\obj\Debug\Install.exe
+An exception occurred while trying to find the installers in the C:\Users\Xinnk\Documents\Visual Studio 2015\Projects\wpfServerGUI\Whatever\obj\Debug\Install.exe assembly.
+System.Reflection.ReflectionTypeLoadException: Unable to load one or more of the requested types. Retrieve the LoaderExceptions property for more information.
+Aborting installation for C:\Users\Xinnk\Documents\Visual Studio 2015\Projects\wpfServerGUI\Whatever\obj\Debug\Install.exe.
+Rolling back assembly 'C:\Users\Xinnk\Documents\Visual Studio 2015\Projects\wpfServerGUI\Whatever\obj\Debug\Install.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\Xinnk\Documents\Visual Studio 2015\Projects\wpfServerGUI\Whatever\obj\Debug\Install.InstallLog
+   assemblypath = C:\Users\Xinnk\Documents\Visual Studio 2015\Projects\wpfServerGUI\Whatever\obj\Debug\Install.exe
+An exception occurred while trying to find the installers in the C:\Users\Xinnk\Documents\Visual Studio 2015\Projects\wpfServerGUI\Whatever\obj\Debug\Install.exe assembly.
+System.Reflection.ReflectionTypeLoadException: Unable to load one or more of the requested types. Retrieve the LoaderExceptions property for more information.
+Aborting installation for C:\Users\Xinnk\Documents\Visual Studio 2015\Projects\wpfServerGUI\Whatever\obj\Debug\Install.exe.
+Installing assembly 'C:\Users\Xinnk\Documents\Visual Studio 2015\Projects\wpfServerGUI\Whatever\obj\Debug\Install.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\Xinnk\Documents\Visual Studio 2015\Projects\wpfServerGUI\Whatever\obj\Debug\Install.InstallLog
+   assemblypath = C:\Users\Xinnk\Documents\Visual Studio 2015\Projects\wpfServerGUI\Whatever\obj\Debug\Install.exe
+An exception occurred while trying to find the installers in the C:\Users\Xinnk\Documents\Visual Studio 2015\Projects\wpfServerGUI\Whatever\obj\Debug\Install.exe assembly.
+System.Reflection.ReflectionTypeLoadException: Unable to load one or more of the requested types. Retrieve the LoaderExceptions property for more information.
+Aborting installation for C:\Users\Xinnk\Documents\Visual Studio 2015\Projects\wpfServerGUI\Whatever\obj\Debug\Install.exe.
+Rolling back assembly 'C:\Users\Xinnk\Documents\Visual Studio 2015\Projects\wpfServerGUI\Whatever\obj\Debug\Install.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\Xinnk\Documents\Visual Studio 2015\Projects\wpfServerGUI\Whatever\obj\Debug\Install.InstallLog
+   assemblypath = C:\Users\Xinnk\Documents\Visual Studio 2015\Projects\wpfServerGUI\Whatever\obj\Debug\Install.exe
+An exception occurred while trying to find the installers in the C:\Users\Xinnk\Documents\Visual Studio 2015\Projects\wpfServerGUI\Whatever\obj\Debug\Install.exe assembly.
+System.Reflection.ReflectionTypeLoadException: Unable to load one or more of the requested types. Retrieve the LoaderExceptions property for more information.
+Aborting installation for C:\Users\Xinnk\Documents\Visual Studio 2015\Projects\wpfServerGUI\Whatever\obj\Debug\Install.exe.
+Uninstalling assembly 'C:\Users\Xinnk\Documents\Visual Studio 2015\Projects\wpfServerGUI\Whatever\obj\Debug\Install.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\Xinnk\Documents\Visual Studio 2015\Projects\wpfServerGUI\Whatever\obj\Debug\Install.InstallLog
+   assemblypath = C:\Users\Xinnk\Documents\Visual Studio 2015\Projects\wpfServerGUI\Whatever\obj\Debug\Install.exe
+An exception occurred while trying to find the installers in the C:\Users\Xinnk\Documents\Visual Studio 2015\Projects\wpfServerGUI\Whatever\obj\Debug\Install.exe assembly.
+System.Reflection.ReflectionTypeLoadException: Unable to load one or more of the requested types. Retrieve the LoaderExceptions property for more information.
+Aborting installation for C:\Users\Xinnk\Documents\Visual Studio 2015\Projects\wpfServerGUI\Whatever\obj\Debug\Install.exe.
+Installing assembly 'C:\Users\Xinnk\Documents\Visual Studio 2015\Projects\wpfServerGUI\Whatever\obj\Debug\Install.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\Xinnk\Documents\Visual Studio 2015\Projects\wpfServerGUI\Whatever\obj\Debug\Install.InstallLog
+   assemblypath = C:\Users\Xinnk\Documents\Visual Studio 2015\Projects\wpfServerGUI\Whatever\obj\Debug\Install.exe
+An exception occurred while trying to find the installers in the C:\Users\Xinnk\Documents\Visual Studio 2015\Projects\wpfServerGUI\Whatever\obj\Debug\Install.exe assembly.
+System.Reflection.ReflectionTypeLoadException: Unable to load one or more of the requested types. Retrieve the LoaderExceptions property for more information.
+Aborting installation for C:\Users\Xinnk\Documents\Visual Studio 2015\Projects\wpfServerGUI\Whatever\obj\Debug\Install.exe.
+Rolling back assembly 'C:\Users\Xinnk\Documents\Visual Studio 2015\Projects\wpfServerGUI\Whatever\obj\Debug\Install.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\Xinnk\Documents\Visual Studio 2015\Projects\wpfServerGUI\Whatever\obj\Debug\Install.InstallLog
+   assemblypath = C:\Users\Xinnk\Documents\Visual Studio 2015\Projects\wpfServerGUI\Whatever\obj\Debug\Install.exe
+An exception occurred while trying to find the installers in the C:\Users\Xinnk\Documents\Visual Studio 2015\Projects\wpfServerGUI\Whatever\obj\Debug\Install.exe assembly.
+System.Reflection.ReflectionTypeLoadException: Unable to load one or more of the requested types. Retrieve the LoaderExceptions property for more information.
+Aborting installation for C:\Users\Xinnk\Documents\Visual Studio 2015\Projects\wpfServerGUI\Whatever\obj\Debug\Install.exe.
+Uninstalling assembly 'C:\Users\Xinnk\Documents\Visual Studio 2015\Projects\wpfServerGUI\Whatever\obj\Debug\Install.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\Xinnk\Documents\Visual Studio 2015\Projects\wpfServerGUI\Whatever\obj\Debug\Install.InstallLog
+   assemblypath = C:\Users\Xinnk\Documents\Visual Studio 2015\Projects\wpfServerGUI\Whatever\obj\Debug\Install.exe
+An exception occurred while trying to find the installers in the C:\Users\Xinnk\Documents\Visual Studio 2015\Projects\wpfServerGUI\Whatever\obj\Debug\Install.exe assembly.
+System.Reflection.ReflectionTypeLoadException: Unable to load one or more of the requested types. Retrieve the LoaderExceptions property for more information.
+Aborting installation for C:\Users\Xinnk\Documents\Visual Studio 2015\Projects\wpfServerGUI\Whatever\obj\Debug\Install.exe.
+Uninstalling assembly 'C:\Users\Xinnk\Documents\Visual Studio 2015\Projects\wpfServerGUI\Whatever\obj\Debug\Install.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\Xinnk\Documents\Visual Studio 2015\Projects\wpfServerGUI\Whatever\obj\Debug\Install.InstallLog
+   assemblypath = C:\Users\Xinnk\Documents\Visual Studio 2015\Projects\wpfServerGUI\Whatever\obj\Debug\Install.exe
+An exception occurred while trying to find the installers in the C:\Users\Xinnk\Documents\Visual Studio 2015\Projects\wpfServerGUI\Whatever\obj\Debug\Install.exe assembly.
+System.Reflection.ReflectionTypeLoadException: Unable to load one or more of the requested types. Retrieve the LoaderExceptions property for more information.
+Aborting installation for C:\Users\Xinnk\Documents\Visual Studio 2015\Projects\wpfServerGUI\Whatever\obj\Debug\Install.exe.
+Uninstalling assembly 'C:\Users\Xinnk\Documents\Visual Studio 2015\Projects\wpfServerGUI\Whatever\obj\Debug\Install.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\Xinnk\Documents\Visual Studio 2015\Projects\wpfServerGUI\Whatever\obj\Debug\Install.InstallLog
+   assemblypath = C:\Users\Xinnk\Documents\Visual Studio 2015\Projects\wpfServerGUI\Whatever\obj\Debug\Install.exe
+An exception occurred while trying to find the installers in the C:\Users\Xinnk\Documents\Visual Studio 2015\Projects\wpfServerGUI\Whatever\obj\Debug\Install.exe assembly.
+System.Reflection.ReflectionTypeLoadException: Unable to load one or more of the requested types. Retrieve the LoaderExceptions property for more information.
+Aborting installation for C:\Users\Xinnk\Documents\Visual Studio 2015\Projects\wpfServerGUI\Whatever\obj\Debug\Install.exe.
+Uninstalling assembly 'C:\Users\Xinnk\Documents\Visual Studio 2015\Projects\wpfServerGUI\Whatever\obj\Debug\Install.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\Xinnk\Documents\Visual Studio 2015\Projects\wpfServerGUI\Whatever\obj\Debug\Install.InstallLog
+   assemblypath = C:\Users\Xinnk\Documents\Visual Studio 2015\Projects\wpfServerGUI\Whatever\obj\Debug\Install.exe
+An exception occurred while trying to find the installers in the C:\Users\Xinnk\Documents\Visual Studio 2015\Projects\wpfServerGUI\Whatever\obj\Debug\Install.exe assembly.
+System.Reflection.ReflectionTypeLoadException: Unable to load one or more of the requested types. Retrieve the LoaderExceptions property for more information.
+Aborting installation for C:\Users\Xinnk\Documents\Visual Studio 2015\Projects\wpfServerGUI\Whatever\obj\Debug\Install.exe.
+Installing assembly 'C:\Users\Xinnk\Documents\Visual Studio 2015\Projects\wpfServerGUI\Whatever\obj\Debug\Install.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\Xinnk\Documents\Visual Studio 2015\Projects\wpfServerGUI\Whatever\obj\Debug\Install.InstallLog
+   assemblypath = C:\Users\Xinnk\Documents\Visual Studio 2015\Projects\wpfServerGUI\Whatever\obj\Debug\Install.exe
+An exception occurred while trying to find the installers in the C:\Users\Xinnk\Documents\Visual Studio 2015\Projects\wpfServerGUI\Whatever\obj\Debug\Install.exe assembly.
+System.Reflection.ReflectionTypeLoadException: Unable to load one or more of the requested types. Retrieve the LoaderExceptions property for more information.
+Aborting installation for C:\Users\Xinnk\Documents\Visual Studio 2015\Projects\wpfServerGUI\Whatever\obj\Debug\Install.exe.
+Rolling back assembly 'C:\Users\Xinnk\Documents\Visual Studio 2015\Projects\wpfServerGUI\Whatever\obj\Debug\Install.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\Xinnk\Documents\Visual Studio 2015\Projects\wpfServerGUI\Whatever\obj\Debug\Install.InstallLog
+   assemblypath = C:\Users\Xinnk\Documents\Visual Studio 2015\Projects\wpfServerGUI\Whatever\obj\Debug\Install.exe
+An exception occurred while trying to find the installers in the C:\Users\Xinnk\Documents\Visual Studio 2015\Projects\wpfServerGUI\Whatever\obj\Debug\Install.exe assembly.
+System.Reflection.ReflectionTypeLoadException: Unable to load one or more of the requested types. Retrieve the LoaderExceptions property for more information.
+Aborting installation for C:\Users\Xinnk\Documents\Visual Studio 2015\Projects\wpfServerGUI\Whatever\obj\Debug\Install.exe.
