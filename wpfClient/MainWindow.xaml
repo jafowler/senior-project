@@ -6,7 +6,9 @@
         xmlns:local="clr-namespace:wpfClient"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="1000">
-    <Grid>
-        <Label x:Name="label" Content="Label" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="288" Width="972"/>
-    </Grid>
+    <Window.DataContext>
+        <local:SystemViewModel/>
+    </Window.DataContext>
+    <local:SystemView DataContext="{Binding}"/>
+    
 </Window>

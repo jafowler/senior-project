@@ -14,3 +14,6 @@ C:\Users\Xinnk\Documents\Visual Studio 2015\Projects\wpfServerGUI\wpfClient\obj\
 C:\Users\Xinnk\Documents\Visual Studio 2015\Projects\wpfServerGUI\wpfClient\obj\Debug\wpfClient.csproj.GenerateResource.Cache
 C:\Users\Xinnk\Documents\Visual Studio 2015\Projects\wpfServerGUI\wpfClient\obj\Debug\wpfClient.exe
 C:\Users\Xinnk\Documents\Visual Studio 2015\Projects\wpfServerGUI\wpfClient\obj\Debug\wpfClient.pdb
+C:\Users\Xinnk\Documents\Visual Studio 2015\Projects\wpfServerGUI\wpfClient\obj\Debug\SystemView.g.cs
+C:\Users\Xinnk\Documents\Visual Studio 2015\Projects\wpfServerGUI\wpfClient\obj\Debug\SystemView.baml
+C:\Users\Xinnk\Documents\Visual Studio 2015\Projects\wpfServerGUI\wpfClient\obj\Debug\GeneratedInternalTypeHelper.g.cs

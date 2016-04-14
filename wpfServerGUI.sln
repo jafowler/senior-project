@@ -3,11 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wpfServerGUI", "wpfServerGUI\wpfServerGUI.csproj", "{E8D2209E-5DE2-4B98-8A9E-6D2082991DB7}"
-	ProjectSection(ProjectDependencies) = postProject
-		{355B027C-1A0C-44F8-BC40-0E3D3121698B} = {355B027C-1A0C-44F8-BC40-0E3D3121698B}
-	EndProjectSection
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wcfServerApp", "wcfServerApp\wcfServerApp.csproj", "{F040BB48-12DB-406E-B9AD-6ADA56B392B1}"
 	ProjectSection(ProjectDependencies) = postProject
 		{355B027C-1A0C-44F8-BC40-0E3D3121698B} = {355B027C-1A0C-44F8-BC40-0E3D3121698B}
@@ -30,10 +25,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{E8D2209E-5DE2-4B98-8A9E-6D2082991DB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E8D2209E-5DE2-4B98-8A9E-6D2082991DB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E8D2209E-5DE2-4B98-8A9E-6D2082991DB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E8D2209E-5DE2-4B98-8A9E-6D2082991DB7}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F040BB48-12DB-406E-B9AD-6ADA56B392B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F040BB48-12DB-406E-B9AD-6ADA56B392B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F040BB48-12DB-406E-B9AD-6ADA56B392B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
