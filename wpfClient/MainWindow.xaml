@@ -9,6 +9,6 @@
     <Window.DataContext>
         <local:SystemViewModel/>
     </Window.DataContext>
-    <local:SystemView DataContext="{Binding}"/>
+    <local:SystemView DataContext="{Binding}" Margin="0,0,518,0"/>
     
 </Window>

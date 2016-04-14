@@ -16,7 +16,10 @@
                             <ListView.ItemTemplate>
                                 <DataTemplate>
                                     <Expander>
-                                        <Run Text="{Binding caption}"/>
+                                        <StackPanel>
+                                            <TextBlock Text="{Binding caption}"/>
+                                            <TextBlock Text="{Binding size, StringFormat= {0} Bytes}"/>
+                                        </StackPanel>
                                     </Expander>
                                 </DataTemplate>
                             </ListView.ItemTemplate>

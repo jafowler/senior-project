@@ -1,0 +1,5 @@
+C:\Users\Xinnk\Documents\Visual Studio 2015\Projects\wpfServerGUI\sharedObjects\bin\Release\sharedObjects.dll
+C:\Users\Xinnk\Documents\Visual Studio 2015\Projects\wpfServerGUI\sharedObjects\bin\Release\sharedObjects.pdb
+C:\Users\Xinnk\Documents\Visual Studio 2015\Projects\wpfServerGUI\sharedObjects\obj\Release\sharedObjects.csprojResolveAssemblyReference.cache
+C:\Users\Xinnk\Documents\Visual Studio 2015\Projects\wpfServerGUI\sharedObjects\obj\Release\sharedObjects.dll
+C:\Users\Xinnk\Documents\Visual Studio 2015\Projects\wpfServerGUI\sharedObjects\obj\Release\sharedObjects.pdb
