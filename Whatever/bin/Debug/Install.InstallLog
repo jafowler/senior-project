@@ -624,3 +624,16 @@ Affected parameters are:
    logtoconsole = 
    logfile = C:\Users\Xinnk\Documents\Visual Studio 2015\Projects\wpfServerGUI\Whatever\bin\Debug\Install.InstallLog
    assemblypath = C:\Users\Xinnk\Documents\Visual Studio 2015\Projects\wpfServerGUI\Whatever\bin\Debug\Install.exe
+Installing assembly 'C:\Users\jacob\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\jacob\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.InstallLog
+   assemblypath = C:\Users\jacob\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.exe
+Installing service TestService...
+Service TestService has been successfully installed.
+Creating EventLog source TestService in log Application...
+Committing assembly 'C:\Users\jacob\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\jacob\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.InstallLog
+   assemblypath = C:\Users\jacob\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.exe

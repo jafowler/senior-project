@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-C:\Users\jacob\Documents\GitHub\senior-project\wpfClient\obj\Release\
+C:\Users\jacob\Documents\GitHub\senior-project\wpfClient\obj\Debug\
 wpfClient
 none
 false
-TRACE
+DEBUG;TRACE
 C:\Users\jacob\Documents\GitHub\senior-project\wpfClient\App.xaml
 2-248614017
 
-11-1576574126
-17-968345800
+14586492233
+17963240401
 MainWindow.xaml;SystemView.xaml;
 
 True

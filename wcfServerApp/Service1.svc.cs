@@ -43,7 +43,7 @@ namespace wcfServerApp
                 else if (line.Contains("Size"))
                 {
                     tempDrive.size = parseLine(line);   
-                    if(tempDrive.partitions.Equals("0")) mySystem.myDrives.Add(tempDrive);
+                    if(tempDrive.partitions.Equals("0") && !tempDrive.size.Equals("")) mySystem.myDrives.Add(tempDrive);
                     tempDrive = new Drive();
                 }
             }

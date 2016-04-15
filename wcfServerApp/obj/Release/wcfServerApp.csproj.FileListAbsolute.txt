@@ -18,3 +18,23 @@ C:\Users\Xinnk\Documents\Visual Studio 2015\Projects\wpfServerGUI\wcfServerApp\b
 C:\Users\Xinnk\Documents\Visual Studio 2015\Projects\wpfServerGUI\wcfServerApp\obj\Release\wcfServerApp.csprojResolveAssemblyReference.cache
 C:\Users\Xinnk\Documents\Visual Studio 2015\Projects\wpfServerGUI\wcfServerApp\obj\Release\wcfServerApp.dll
 C:\Users\Xinnk\Documents\Visual Studio 2015\Projects\wpfServerGUI\wcfServerApp\obj\Release\wcfServerApp.pdb
+C:\Users\jacob\Documents\GitHub\senior-project\wcfServerApp\bin\ApplicationInsights.config
+C:\Users\jacob\Documents\GitHub\senior-project\wcfServerApp\bin\wcfServerApp.dll
+C:\Users\jacob\Documents\GitHub\senior-project\wcfServerApp\bin\wcfServerApp.pdb
+C:\Users\jacob\Documents\GitHub\senior-project\wcfServerApp\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\jacob\Documents\GitHub\senior-project\wcfServerApp\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\jacob\Documents\GitHub\senior-project\wcfServerApp\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\jacob\Documents\GitHub\senior-project\wcfServerApp\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\jacob\Documents\GitHub\senior-project\wcfServerApp\bin\Microsoft.AI.Web.dll
+C:\Users\jacob\Documents\GitHub\senior-project\wcfServerApp\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\jacob\Documents\GitHub\senior-project\wcfServerApp\bin\Microsoft.ApplicationInsights.dll
+C:\Users\jacob\Documents\GitHub\senior-project\wcfServerApp\bin\sharedObjects.dll
+C:\Users\jacob\Documents\GitHub\senior-project\wcfServerApp\bin\sharedObjects.pdb
+C:\Users\jacob\Documents\GitHub\senior-project\wcfServerApp\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\jacob\Documents\GitHub\senior-project\wcfServerApp\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\jacob\Documents\GitHub\senior-project\wcfServerApp\bin\Microsoft.AI.Web.xml
+C:\Users\jacob\Documents\GitHub\senior-project\wcfServerApp\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\jacob\Documents\GitHub\senior-project\wcfServerApp\bin\Microsoft.ApplicationInsights.xml
+C:\Users\jacob\Documents\GitHub\senior-project\wcfServerApp\obj\Release\wcfServerApp.csprojResolveAssemblyReference.cache
+C:\Users\jacob\Documents\GitHub\senior-project\wcfServerApp\obj\Release\wcfServerApp.dll
+C:\Users\jacob\Documents\GitHub\senior-project\wcfServerApp\obj\Release\wcfServerApp.pdb

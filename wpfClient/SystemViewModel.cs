@@ -9,6 +9,9 @@ using System.Diagnostics;
 using System.Runtime.Serialization;
 using System.ComponentModel;
 using System.Collections.ObjectModel;
+using System.Threading;
+using System.Windows.Input;
+using wpfClient;
 
 namespace wpfClient
 {
@@ -16,16 +19,38 @@ namespace wpfClient
     {
         public SystemViewModel()
         {
-            //string ipAddress = "http://192.168.0.";
+            var ipaddress = Enumerable.Range(1, 255).ToArray();
             NetworkSystems = new ObservableCollection<SysInfo>();
-            var retval = getActiveSystemInformation("http://localhost");
-            if (retval != null) NetworkSystems.Add(retval);
+            var uiScheduler = TaskScheduler.FromCurrentSynchronizationContext();
+            Refresh = new AsyncCommand(()=>asyncGetNetworkSystems());
+            
         }
 
-       public event PropertyChangedEventHandler PropertyChanged;
-
-        public SysInfo getActiveSystemInformation(string ipAddress)
+        public async Task asyncGetNetworkSystems()
         {
+            var tempList = new List<SysInfo>();
+            NetworkSystems.Clear();
+            var task = Task.Factory.StartNew(() => parallelIPScan(tempList));
+            await task;
+            NetworkSystems.Equals(tempList);
+        }
+
+        public void parallelIPScan(List<SysInfo> tempList)
+        {
+            var ipaddress = "192.168.0.";
+            Parallel.For(1, 255,
+                   index => {
+                       var retval = getActiveSystemInformation(ipaddress + index);
+                       if (retval != null) tempList.Add(retval);
+                   });
+        }
+
+        public event PropertyChangedEventHandler PropertyChanged;
+        public IAsyncCommand Refresh { get; set; }
+
+       public SysInfo getActiveSystemInformation(string ipAddress)
+       {
+         
             var request = (HttpWebRequest)WebRequest.Create(ipAddress + ":8089/ServerApp/devices");
             Trace.WriteLine(ipAddress + ":8089");
             request.Method = "GET";

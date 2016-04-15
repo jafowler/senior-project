@@ -17,3 +17,22 @@ C:\Users\Xinnk\Documents\Visual Studio 2015\Projects\wpfServerGUI\wpfClient\obj\
 C:\Users\Xinnk\Documents\Visual Studio 2015\Projects\wpfServerGUI\wpfClient\obj\Release\wpfClient.csproj.GenerateResource.Cache
 C:\Users\Xinnk\Documents\Visual Studio 2015\Projects\wpfServerGUI\wpfClient\obj\Release\wpfClient.exe
 C:\Users\Xinnk\Documents\Visual Studio 2015\Projects\wpfServerGUI\wpfClient\obj\Release\wpfClient.pdb
+C:\Users\jacob\Documents\GitHub\senior-project\wpfClient\bin\Release\wpfClient.exe.config
+C:\Users\jacob\Documents\GitHub\senior-project\wpfClient\bin\Release\wpfClient.exe
+C:\Users\jacob\Documents\GitHub\senior-project\wpfClient\bin\Release\wpfClient.pdb
+C:\Users\jacob\Documents\GitHub\senior-project\wpfClient\bin\Release\sharedObjects.dll
+C:\Users\jacob\Documents\GitHub\senior-project\wpfClient\bin\Release\sharedObjects.pdb
+C:\Users\jacob\Documents\GitHub\senior-project\wpfClient\obj\Release\wpfClient.csprojResolveAssemblyReference.cache
+C:\Users\jacob\Documents\GitHub\senior-project\wpfClient\obj\Release\MainWindow.g.cs
+C:\Users\jacob\Documents\GitHub\senior-project\wpfClient\obj\Release\SystemView.g.cs
+C:\Users\jacob\Documents\GitHub\senior-project\wpfClient\obj\Release\App.g.cs
+C:\Users\jacob\Documents\GitHub\senior-project\wpfClient\obj\Release\GeneratedInternalTypeHelper.g.cs
+C:\Users\jacob\Documents\GitHub\senior-project\wpfClient\obj\Release\wpfClient_MarkupCompile.cache
+C:\Users\jacob\Documents\GitHub\senior-project\wpfClient\obj\Release\wpfClient_MarkupCompile.lref
+C:\Users\jacob\Documents\GitHub\senior-project\wpfClient\obj\Release\MainWindow.baml
+C:\Users\jacob\Documents\GitHub\senior-project\wpfClient\obj\Release\SystemView.baml
+C:\Users\jacob\Documents\GitHub\senior-project\wpfClient\obj\Release\wpfClient.g.resources
+C:\Users\jacob\Documents\GitHub\senior-project\wpfClient\obj\Release\wpfClient.Properties.Resources.resources
+C:\Users\jacob\Documents\GitHub\senior-project\wpfClient\obj\Release\wpfClient.csproj.GenerateResource.Cache
+C:\Users\jacob\Documents\GitHub\senior-project\wpfClient\obj\Release\wpfClient.exe
+C:\Users\jacob\Documents\GitHub\senior-project\wpfClient\obj\Release\wpfClient.pdb

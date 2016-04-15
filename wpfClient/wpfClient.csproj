@@ -58,6 +58,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="AsyncCommand.cs" />
+    <Compile Include="AsyncCommandBase.cs" />
+    <Compile Include="IAsyncCommand.cs" />
     <Compile Include="SystemView.xaml.cs">
       <DependentUpon>SystemView.xaml</DependentUpon>
     </Compile>

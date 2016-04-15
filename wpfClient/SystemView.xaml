@@ -7,26 +7,9 @@
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300">
     <Grid>
-        <ListView ItemsSource="{Binding NetworkSystems}">
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <ListView ItemsSource="{Binding}">
-                        <TextBlock Text="{Binding SystemName}"/>
-                        <ListView ItemsSource="{Binding myDrives}">
-                            <ListView.ItemTemplate>
-                                <DataTemplate>
-                                    <Expander>
-                                        <StackPanel>
-                                            <TextBlock Text="{Binding caption}"/>
-                                            <TextBlock Text="{Binding size, StringFormat= {0} Bytes}"/>
-                                        </StackPanel>
-                                    </Expander>
-                                </DataTemplate>
-                            </ListView.ItemTemplate>
-                        </ListView>
-                    </ListView>
-                </DataTemplate>
-            </ListView.ItemTemplate>
+        <ListView>
+            <Button x:Name="Refresh" Content="Refresh" Width="75"/>
+            <Button Command="{Binding Refresh}"/>
         </ListView>
     </Grid>
 </UserControl>
