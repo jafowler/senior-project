@@ -4,12 +4,32 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:wpfClient"
-             mc:Ignorable="d" 
-             d:DesignHeight="300" d:DesignWidth="300">
-    <Grid>
-        <ListView>
-            <Button x:Name="Refresh" Content="Refresh" Width="75"/>
-            <Button Command="{Binding Refresh}"/>
+             mc:Ignorable="d" Height="347.664" Width="420.561">
+    <Grid Margin="0,0,164,10">
+        <ListView ItemsSource="{Binding NetworkSystems}" Margin="0,0,-167,0">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ListView ItemsSource="{Binding}">
+                        <TextBlock Text="{Binding SystemName}"/>
+                        <ListView ItemsSource="{Binding myDrives}">
+                            <ListView.ItemTemplate>
+                                <DataTemplate>
+                                    <Expander>
+                                        <StackPanel>
+                                            <TextBlock Text="{Binding caption}"/>
+                                            <TextBlock Text="{Binding size}"/>
+                                        </StackPanel>
+                                    </Expander>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+                    </ListView>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+
+
         </ListView>
+        <Button x:Name="button" Content="Button" HorizontalAlignment="Left" Margin="349,318,-167,0" Width="75" Command="{Binding Refresh}" Height="20" VerticalAlignment="Top"/>
+
     </Grid>
 </UserControl>
