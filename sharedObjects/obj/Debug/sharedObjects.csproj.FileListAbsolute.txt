@@ -7,3 +7,8 @@ C:\Users\jacob\Documents\GitHub\senior-project\sharedObjects\bin\Debug\sharedObj
 C:\Users\jacob\Documents\GitHub\senior-project\sharedObjects\obj\Debug\sharedObjects.csprojResolveAssemblyReference.cache
 C:\Users\jacob\Documents\GitHub\senior-project\sharedObjects\obj\Debug\sharedObjects.dll
 C:\Users\jacob\Documents\GitHub\senior-project\sharedObjects\obj\Debug\sharedObjects.pdb
+C:\Users\Xinnk\Documents\senior-project\sharedObjects\bin\Debug\sharedObjects.dll
+C:\Users\Xinnk\Documents\senior-project\sharedObjects\bin\Debug\sharedObjects.pdb
+C:\Users\Xinnk\Documents\senior-project\sharedObjects\obj\Debug\sharedObjects.csprojResolveAssemblyReference.cache
+C:\Users\Xinnk\Documents\senior-project\sharedObjects\obj\Debug\sharedObjects.dll
+C:\Users\Xinnk\Documents\senior-project\sharedObjects\obj\Debug\sharedObjects.pdb

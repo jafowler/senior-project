@@ -12,6 +12,8 @@ using System.Collections.ObjectModel;
 using System.Threading;
 using System.Windows.Input;
 using wpfClient;
+using System.Windows.Threading;
+using System.Windows;
 
 namespace wpfClient
 {
@@ -32,16 +34,25 @@ namespace wpfClient
             NetworkSystems.Clear();
             var task = Task.Factory.StartNew(() => parallelIPScan(tempList));
             await task;
-            NetworkSystems.Equals(tempList);
+            //foreach (var index in tempList) NetworkSystems.Add(index);
         }
+
+        public delegate void UpdateTextCallback(List<SysInfo> tempList);
 
         public void parallelIPScan(List<SysInfo> tempList)
         {
-            var ipaddress = "192.168.0.";
+            var ipaddress = "http://192.168.0.";
             Parallel.For(1, 255,
                    index => {
                        var retval = getActiveSystemInformation(ipaddress + index);
-                       if (retval != null) tempList.Add(retval);
+                       if (retval != null && retval.myDrives.Count != 0)
+                       {
+                           retval.ipAddress = ipaddress + index;
+                           Application.Current.Dispatcher.Invoke(() =>
+                           {
+                               NetworkSystems.Add(retval);
+                           });
+                       }
                    });
         }
 
