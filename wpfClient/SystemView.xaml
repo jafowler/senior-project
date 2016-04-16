@@ -4,32 +4,17 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:wpfClient"
-             mc:Ignorable="d" Height="360.651" Width="495.489">
+             mc:Ignorable="d" Height="363.76" Width="495.489">
     <Grid Margin="0,0,164,10">
-        <ListView x:Name="NetworkSystemsListView"  ItemsSource="{Binding NetworkSystems}" HorizontalAlignment="Left" Width="321" SelectionChanged="NetworkSystemsListView_SelectionChanged">
+        <ListView x:Name="NetworkSystemsListView"  ItemsSource="{Binding NetworkSystems}" HorizontalAlignment="Right" VerticalAlignment="Stretch" Width="321" Height="351" >
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ListView ItemsSource="{Binding}" SelectedItem="{Binding SelectedSysInfo}">
                         <TextBlock Text="{Binding SystemName}"/>
-                        <ListView ItemsSource="{Binding myDrives}" SelectedItem="{Binding SelectedDrive}">
-                            <ListView.ItemTemplate>
-                                <DataTemplate>
-                                    <Expander>
-                                        <StackPanel>
-                                            <TextBlock Text="{Binding caption}"/>
-                                            <TextBlock Text="{Binding size}"/>
-                                        </StackPanel>
-                                    </Expander>
-                                </DataTemplate>
-                            </ListView.ItemTemplate>
-                        </ListView>
                     </ListView>
                 </DataTemplate>
-            </ListView.ItemTemplate>
-
-
+            </ListView.ItemTemplate>           
         </ListView>
-        <Button x:Name="button" Content="Refresh" HorizontalAlignment="Left" Margin="246,331,0,0" Width="75" Command="{Binding Refresh}" Height="20" VerticalAlignment="Top"/>
-
+        <Button x:Name="button" Content="Refresh" HorizontalAlignment="Right" Margin="246,331,0,0" Width="75" Command="{Binding Refresh}" Height="20" VerticalAlignment="Stretch" />
     </Grid>
 </UserControl>
