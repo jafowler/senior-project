@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace wpfClient
 {
+    //https://msdn.microsoft.com/en-us/magazine/dn630647.aspx
     public class AsyncCommand : AsyncCommandBase
     {
         private readonly Func<Task> _command;

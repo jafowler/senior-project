@@ -6,12 +6,12 @@
              xmlns:local="clr-namespace:wpfClient"
              mc:Ignorable="d" Height="360.651" Width="495.489">
     <Grid Margin="0,0,164,10">
-        <ListView ItemsSource="{Binding NetworkSystems}" HorizontalAlignment="Left" Width="321">
+        <ListView x:Name="NetworkSystemsListView"  ItemsSource="{Binding NetworkSystems}" HorizontalAlignment="Left" Width="321" SelectionChanged="NetworkSystemsListView_SelectionChanged">
             <ListView.ItemTemplate>
                 <DataTemplate>
-                    <ListView ItemsSource="{Binding}">
+                    <ListView ItemsSource="{Binding}" SelectedItem="{Binding SelectedSysInfo}">
                         <TextBlock Text="{Binding SystemName}"/>
-                        <ListView ItemsSource="{Binding myDrives}">
+                        <ListView ItemsSource="{Binding myDrives}" SelectedItem="{Binding SelectedDrive}">
                             <ListView.ItemTemplate>
                                 <DataTemplate>
                                     <Expander>

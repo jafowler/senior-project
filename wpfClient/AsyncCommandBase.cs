@@ -4,6 +4,7 @@ using System.Windows.Input;
 
 namespace wpfClient
 {
+    //https://msdn.microsoft.com/en-us/magazine/dn630647.aspx
     public abstract class AsyncCommandBase : IAsyncCommand
     {
         public abstract bool CanExecute(object parameter);

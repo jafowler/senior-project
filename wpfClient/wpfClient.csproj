@@ -60,6 +60,7 @@
     </ApplicationDefinition>
     <Compile Include="AsyncCommand.cs" />
     <Compile Include="AsyncCommandBase.cs" />
+    <Compile Include="BenchmarkSettingsView.cs" />
     <Compile Include="IAsyncCommand.cs" />
     <Compile Include="SystemView.xaml.cs">
       <DependentUpon>SystemView.xaml</DependentUpon>

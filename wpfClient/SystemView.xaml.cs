@@ -25,5 +25,10 @@ namespace wpfClient
         {
             InitializeComponent();
         }
+
+        private void NetworkSystemsListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }

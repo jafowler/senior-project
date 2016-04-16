@@ -25,6 +25,7 @@ namespace wpfClient
             NetworkSystems = new ObservableCollection<SysInfo>();
             var uiScheduler = TaskScheduler.FromCurrentSynchronizationContext();
             Refresh = new AsyncCommand(()=>asyncGetNetworkSystems());
+
             
         }
 
@@ -59,8 +60,9 @@ namespace wpfClient
         public event PropertyChangedEventHandler PropertyChanged;
         public IAsyncCommand Refresh { get; set; }
 
-       public SysInfo getActiveSystemInformation(string ipAddress)
-       {
+
+        public SysInfo getActiveSystemInformation(string ipAddress)
+        {
          
             var request = (HttpWebRequest)WebRequest.Create(ipAddress + ":8089/ServerApp/devices");
             Trace.WriteLine(ipAddress + ":8089");
@@ -81,15 +83,14 @@ namespace wpfClient
             }
             catch (Exception e)
             {
-                Trace.WriteLine(e);
+                    Trace.WriteLine(e);
                 return null;
             }
         }
 
-        public ObservableCollection<SysInfo> NetworkSystems
-        {
-            get; private set;
-        }
+        public ObservableCollection<SysInfo> NetworkSystems{ get; private set; }
+        public Drive SelectedDrive { get; set; }
+        public SysInfo SelectedSysInfo { get; set; }
     }
         
 }

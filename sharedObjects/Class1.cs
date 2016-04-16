@@ -23,6 +23,12 @@ namespace sharedObjects
         public List<Drive> myDrives { get; set; }
         [DataMember]
         public string SystemName { get; set; }
+
+        [DataMember]
+        public string ipAddress { get; set; }
+
+        [DataMember]
+        public BenchmarkSettings benchmarkSettings { get; set;  }
     }
 
     [DataContract]
@@ -38,5 +44,15 @@ namespace sharedObjects
         public string partitions { get; set; }
         [DataMember]
         public string size { get; set; }
+    }
+    [DataContract]
+    public class BenchmarkSettings
+    {
+        [DataMember]
+        public int time { get; set; }
+        [DataMember]
+        public string selecedDriveLoc { get; set; }
+        [DataMember]
+        public int packetSize { get; set; }
     }
 }
