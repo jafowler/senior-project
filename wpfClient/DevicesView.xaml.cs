@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -13,17 +12,15 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using System.Runtime.Serialization;
-using System.IO;
 
 namespace wpfClient
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for DevicesView.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class DevicesView : UserControl
     {
-        public MainWindow()
+        public DevicesView()
         {
             InitializeComponent();
         }

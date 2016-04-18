@@ -74,3 +74,5 @@ C:\Users\Xinnk\Documents\GitHub\senior-project\wpfClient\obj\Debug\wpfClient.Pro
 C:\Users\Xinnk\Documents\GitHub\senior-project\wpfClient\obj\Debug\wpfClient.csproj.GenerateResource.Cache
 C:\Users\Xinnk\Documents\GitHub\senior-project\wpfClient\obj\Debug\wpfClient.exe
 C:\Users\Xinnk\Documents\GitHub\senior-project\wpfClient\obj\Debug\wpfClient.pdb
+C:\Users\Xinnk\Documents\GitHub\senior-project\wpfClient\obj\Debug\DevicesView.g.cs
+C:\Users\Xinnk\Documents\GitHub\senior-project\wpfClient\obj\Debug\DevicesView.baml

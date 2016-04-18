@@ -61,11 +61,19 @@
     <Compile Include="AsyncCommand.cs" />
     <Compile Include="AsyncCommandBase.cs" />
     <Compile Include="BenchmarkSettingsView.cs" />
+    <Compile Include="DevicesView.xaml.cs">
+      <DependentUpon>DevicesView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DevicesViewModel.cs" />
     <Compile Include="IAsyncCommand.cs" />
     <Compile Include="SystemView.xaml.cs">
       <DependentUpon>SystemView.xaml</DependentUpon>
     </Compile>
     <Compile Include="SystemViewModel.cs" />
+    <Page Include="DevicesView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

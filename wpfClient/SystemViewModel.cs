@@ -17,11 +17,11 @@ using System.Windows;
 
 namespace wpfClient
 {
-    class SystemViewModel : INotifyPropertyChanged
+    class SystemViewModel : INotifyPropertyChanged, IDataErrorInfo
     {
+        private string m_ipaddress = "Please input the starting IP address range";
         public SystemViewModel()
         {
-            var ipaddress = Enumerable.Range(1, 255).ToArray();
             NetworkSystems = new ObservableCollection<SysInfo>();
             var uiScheduler = TaskScheduler.FromCurrentSynchronizationContext();
             Refresh = new AsyncCommand(()=>asyncGetNetworkSystems());
@@ -31,6 +31,7 @@ namespace wpfClient
 
         public async Task asyncGetNetworkSystems()
         {
+            
             var tempList = new List<SysInfo>();
             NetworkSystems.Clear();
             var task = Task.Factory.StartNew(() => parallelIPScan(tempList));
@@ -42,13 +43,13 @@ namespace wpfClient
 
         public void parallelIPScan(List<SysInfo> tempList)
         {
-            var ipaddress = "http://192.168.0.";
+            m_ipaddress = "http://" + m_ipaddress + ".";
             Parallel.For(1, 255,
                    index => {
-                       var retval = getActiveSystemInformation(ipaddress + index);
+                       var retval = getActiveSystemInformation(m_ipaddress + index);
                        if (retval != null && retval.myDrives.Count != 0)
                        {
-                           retval.ipAddress = ipaddress + index;
+                           retval.ipAddress = m_ipaddress + index;
                            Application.Current.Dispatcher.Invoke(() =>
                            {
                                NetworkSystems.Add(retval);
@@ -57,7 +58,6 @@ namespace wpfClient
                    });
         }
 
-        public event PropertyChangedEventHandler PropertyChanged;
         public IAsyncCommand Refresh { get; set; }
 
 
@@ -89,8 +89,42 @@ namespace wpfClient
         }
 
         public ObservableCollection<SysInfo> NetworkSystems{ get; private set; }
+        public string IPAddressRange {
+            get
+            {
+                return m_ipaddress;
+            }
+            set
+            {
+                if(m_ipaddress != value)
+                {
+                    m_ipaddress = value;
+                    OnPropertyChanged("IPAddressRange");
+                }
+            }
+        }
+        public event PropertyChangedEventHandler PropertyChanged;
+        protected void OnPropertyChanged(string propertyName)
+        {
+            if (PropertyChanged != null)
+            {
+                PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+            }
+        }
+        public string Error
+        {
+            get { return "The field cannot be empty!"; }
+        }
         public Drive SelectedDrive { get; set; }
         public SysInfo SelectedSysInfo { get; set; }
+
+        public string this[string columnName]
+        {
+            get
+            {
+                throw new NotImplementedException();
+            }
+        }
     }
         
 }
