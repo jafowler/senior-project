@@ -51,7 +51,7 @@ namespace sharedObjects
         [DataMember]
         public int time { get; set; }
         [DataMember]
-        public string selecedDriveLoc { get; set; }
+        public Drive selectedDrive { get; set; }
         [DataMember]
         public int packetSize { get; set; }
     }

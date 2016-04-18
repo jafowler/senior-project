@@ -8,19 +8,13 @@
              ">
     <Grid Margin="0,10,0,-50">
         <ListView x:Name="SystemDevicesListView" 
-                  ItemsSource="{Binding SelectedSystem}" 
+                  ItemsSource="{Binding SelectedSystem.myDrives}" 
                   VerticalAlignment="Top" 
                   Height="330" 
                   Margin="0,10,0,0">
             <ListView.ItemTemplate>
                 <DataTemplate>
-                    <ListView ItemsSource="{Binding myDrives}">
-                        <ListView.ItemTemplate>
-                            <DataTemplate>
-                                <TextBlock Text="{Binding caption}"/>
-                            </DataTemplate>
-                        </ListView.ItemTemplate>
-                    </ListView>
+                    <TextBlock Text="{Binding caption}"/>
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
