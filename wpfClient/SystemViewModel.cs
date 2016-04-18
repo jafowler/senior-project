@@ -1,7 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using sharedObjects;
 using System.Net;
@@ -9,12 +7,7 @@ using System.Diagnostics;
 using System.Runtime.Serialization;
 using System.ComponentModel;
 using System.Collections.ObjectModel;
-using System.Threading;
-using System.Windows.Input;
-using wpfClient;
-using System.Windows.Threading;
 using System.Windows;
-
 namespace wpfClient
 {
     class SystemViewModel : INotifyPropertyChanged, IDataErrorInfo
@@ -23,6 +16,27 @@ namespace wpfClient
         public SystemViewModel()
         {
             NetworkSystems = new ObservableCollection<SysInfo>();
+            #region test structures
+            var tempSys1 = new SysInfo();
+            var tempSys2 = new SysInfo();
+
+            var tempDrive1 = new Drive();
+            var tempDrive2 = new Drive();
+
+            tempSys1.SystemName = "Temporary_System_1";
+            tempSys2.SystemName = "Temporary_System_2";
+
+            tempDrive1.caption = "Temp Drive 1";
+            tempDrive1.size = "123456";
+            tempDrive2.caption = "Temp Drive 2";
+            tempDrive2.size = "789101112";
+
+            tempSys1.myDrives.Add(tempDrive1);
+            tempSys2.myDrives.Add(tempDrive2);
+            #endregion
+            
+            NetworkSystems.Add(tempSys1);
+            NetworkSystems.Add(tempSys2);
             var uiScheduler = TaskScheduler.FromCurrentSynchronizationContext();
             Refresh = new AsyncCommand(()=>asyncGetNetworkSystems());
 
@@ -63,13 +77,11 @@ namespace wpfClient
 
         public SysInfo getActiveSystemInformation(string ipAddress)
         {
-         
-            var request = (HttpWebRequest)WebRequest.Create(ipAddress + ":8089/ServerApp/devices");
-            Trace.WriteLine(ipAddress + ":8089");
-            request.Method = "GET";
-
             try
             {
+                var request = (HttpWebRequest)WebRequest.Create(ipAddress + ":8089/ServerApp/devices");
+                Trace.WriteLine(ipAddress + ":8089");
+                request.Method = "GET";
                 var response = request.GetResponse();
                 var stream = response.GetResponseStream();
                 var dataSerializer = new DataContractSerializer(typeof(SysInfo));
@@ -115,9 +127,6 @@ namespace wpfClient
         {
             get { return "The field cannot be empty!"; }
         }
-        public Drive SelectedDrive { get; set; }
-        public SysInfo SelectedSysInfo { get; set; }
-
         public string this[string columnName]
         {
             get
@@ -125,7 +134,22 @@ namespace wpfClient
                 throw new NotImplementedException();
             }
         }
+
+        public SysInfo _SelectedSystem = new SysInfo();
+        public SysInfo SelectedSystem {
+            get
+            {
+                return _SelectedSystem;
+            }
+            set
+            {
+                _SelectedSystem = value;
+                OnPropertyChanged("SelectedSystem");
+            }
+        }
+    
     }
+    
         
 }
 

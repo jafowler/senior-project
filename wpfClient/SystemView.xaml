@@ -4,19 +4,38 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:wpfClient"
-             mc:Ignorable="d" Height="363.76" Width="495.489">
-    <Grid Margin="0,0,164,10">
-        <ListView x:Name="NetworkSystemsListView"  ItemsSource="{Binding NetworkSystems}" HorizontalAlignment="Right" VerticalAlignment="Stretch" Width="331" Margin="0,23,0,0" >
+             mc:Ignorable="d" Height="363.76" Width="334.48">
+    <Grid Margin="0,0,0,10">
+        <ListView x:Name="NetworkSystemsListView"  
+                  ItemsSource="{Binding NetworkSystems}" 
+                  IsSynchronizedWithCurrentItem="True" 
+                  SelectedItem="{Binding Path=SelectedSystem, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" 
+                  HorizontalAlignment="Left" 
+                  VerticalAlignment="Top" 
+                  Width="331" 
+                  Margin="0,23,0,0" 
+                  Height="331">
             <ListView.ItemTemplate>
                 <DataTemplate>
-                    <ListView ItemsSource="{Binding}" SelectedItem="{Binding SelectedSysInfo}">
+                    <StackPanel>
                         <TextBlock Text="{Binding SystemName}"/>
-                    </ListView>
+                    </StackPanel>
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-        <Button x:Name="button" Content="Refresh" HorizontalAlignment="Right" Margin="246,331,0,0" Width="75" Command="{Binding Refresh}" Height="20" VerticalAlignment="Stretch" />
-        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="{Binding IPAddressRange, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=False}" VerticalAlignment="Top" Width="331"/>
-
+        <Button x:Name="button" 
+                Content="Refresh" 
+                HorizontalAlignment="Left" 
+                Margin="256,324,0,10" 
+                Width="75" 
+                Command="{Binding Refresh}" 
+                Height="20" 
+                VerticalAlignment="Stretch" />
+        <TextBox x:Name="textBox" 
+                 HorizontalAlignment="Left" 
+                 Height="23" 
+                 TextWrapping="Wrap" 
+                 Text="{Binding IPAddressRange, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=False}" 
+                 VerticalAlignment="Top" Width="331"/>
     </Grid>
 </UserControl>
