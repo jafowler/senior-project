@@ -6,19 +6,19 @@
              xmlns:local="clr-namespace:wpfClient"
              mc:Ignorable="d" Height="351.923" Width="250
              ">
-    <Grid Margin="0,10,0,-50">
+    <Grid Margin="0,10,0,0">
         <ListView x:Name="SystemDevicesListView" 
                   ItemsSource="{Binding SelectedSystem.myDrives}"
                   SelectedItem="{Binding SelectedDrive}"
                   VerticalAlignment="Top" 
                   Height="330" 
-                  Margin="0,10,0,0">
+                  Margin="0,12,0,0">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <TextBlock Text="{Binding caption}"/>
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-        <Button x:Name="button" Content="Select Drive" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="75" Margin="0,0,0,52" />
+        <Button x:Name="button" Content="Select Drive" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="75" Margin="0,0,0,23" />
     </Grid>
 </UserControl>

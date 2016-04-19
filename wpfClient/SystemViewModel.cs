@@ -55,7 +55,9 @@ namespace wpfClient
 
         public void SendData()
         {
-
+            var request = (HttpWebRequest)WebRequest.Create(SelectedSystem.ipAddress + ":8089");
+            Trace.WriteLine(SelectedSystem + ":8089");
+            request.Method = "POST";
         }
 
         public async Task asyncGetNetworkSystems()
