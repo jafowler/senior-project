@@ -19,6 +19,12 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-        <Button x:Name="button" Content="Select Drive" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="75" Margin="0,0,0,23" />
+        <Button x:Name="button"
+                Content="Select Drive"
+                Command="{Binding BenchmarkData}"
+                VerticalAlignment="Bottom" 
+                HorizontalAlignment="Right" 
+                Width="75" 
+                Margin="0,0,0,23" />
     </Grid>
 </UserControl>

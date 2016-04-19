@@ -8,35 +8,43 @@ using System.Runtime.Serialization;
 using System.ComponentModel;
 using System.Collections.ObjectModel;
 using System.Windows;
+using System.IO;
+
 namespace wpfClient
 {
     class SystemViewModel : INotifyPropertyChanged, IDataErrorInfo
     {
         private string m_ipaddress = "Please input the starting IP address range";
+        bool debug = true;
         public SystemViewModel()
         {
             NetworkSystems = new ObservableCollection<SysInfo>();
             #region test structures
-            var tempSys1 = new SysInfo();
-            var tempSys2 = new SysInfo();
 
-            var tempDrive1 = new Drive();
-            var tempDrive2 = new Drive();
+            if (debug)
+            {
+                var tempSys1 = new SysInfo();
+                var tempSys2 = new SysInfo();
 
-            tempSys1.SystemName = "Temporary_System_1";
-            tempSys2.SystemName = "Temporary_System_2";
+                var tempDrive1 = new Drive();
+                var tempDrive2 = new Drive();
 
-            tempDrive1.caption = "Temp Drive 1";
-            tempDrive1.size = "123456";
-            tempDrive2.caption = "Temp Drive 2";
-            tempDrive2.size = "789101112";
+                tempSys1.SystemName = "Temporary_System_1";
+                tempSys2.SystemName = "Temporary_System_2";
 
-            tempSys1.myDrives.Add(tempDrive1);
-            tempSys2.myDrives.Add(tempDrive2);
-            #endregion
-            
-            NetworkSystems.Add(tempSys1);
-            NetworkSystems.Add(tempSys2);
+                tempDrive1.caption = "Temp Drive 1";
+                tempDrive1.size = "123456";
+                tempDrive2.caption = "Temp Drive 2";
+                tempDrive2.size = "789101112";
+
+                tempSys1.myDrives.Add(tempDrive1);
+                tempSys2.myDrives.Add(tempDrive2);
+
+
+                NetworkSystems.Add(tempSys1);
+                NetworkSystems.Add(tempSys2);
+            }
+#endregion
             var uiScheduler = TaskScheduler.FromCurrentSynchronizationContext();
             Refresh = new AsyncCommand(()=>asyncGetNetworkSystems());
             BenchmarkData = new AsyncCommand(()=> asyncSendBenchmarkData());
@@ -55,9 +63,13 @@ namespace wpfClient
 
         public void SendData()
         {
-            var request = (HttpWebRequest)WebRequest.Create(SelectedSystem.ipAddress + ":8089");
-            Trace.WriteLine(SelectedSystem + ":8089");
+            var request = (HttpWebRequest)WebRequest.Create(SelectedSystem.ipAddress + ":8089/ServerApp/devices");
+            Trace.WriteLine(SelectedSystem.ipAddress + ":8089");
             request.Method = "POST";
+            var response = request.GetResponse();
+            var stream = new StreamWriter(response.GetResponseStream());
+            stream.Write(_benchmarkSettings);
+            stream.Close();
         }
 
         public async Task asyncGetNetworkSystems()
