@@ -39,8 +39,23 @@ namespace wpfClient
             NetworkSystems.Add(tempSys2);
             var uiScheduler = TaskScheduler.FromCurrentSynchronizationContext();
             Refresh = new AsyncCommand(()=>asyncGetNetworkSystems());
+            BenchmarkData = new AsyncCommand(()=> asyncSendBenchmarkData());
 
             
+        }
+
+        public async Task asyncSendBenchmarkData()
+        {
+            _benchmarkSettings.selectedDrive = SelectedDrive;
+            _benchmarkSettings.time = 600;
+            _benchmarkSettings.packetSize = 131072;
+            var task = Task.Factory.StartNew(() => SendData());
+            await task;
+        }
+
+        public void SendData()
+        {
+
         }
 
         public async Task asyncGetNetworkSystems()
@@ -50,7 +65,6 @@ namespace wpfClient
             NetworkSystems.Clear();
             var task = Task.Factory.StartNew(() => parallelIPScan(tempList));
             await task;
-            //foreach (var index in tempList) NetworkSystems.Add(index);
         }
 
         public delegate void UpdateTextCallback(List<SysInfo> tempList);
@@ -73,7 +87,7 @@ namespace wpfClient
         }
 
         public IAsyncCommand Refresh { get; set; }
-
+        public IAsyncCommand BenchmarkData { get; set; }
 
         public SysInfo getActiveSystemInformation(string ipAddress)
         {
@@ -135,6 +149,8 @@ namespace wpfClient
             }
         }
 
+        public BenchmarkSettings _benchmarkSettings = new BenchmarkSettings();
+
         public SysInfo _SelectedSystem = new SysInfo();
         public SysInfo SelectedSystem {
             get
@@ -147,11 +163,22 @@ namespace wpfClient
                 OnPropertyChanged("SelectedSystem");
             }
         }
+
+        public Drive _SelectedDrive = new Drive();
+        public Drive SelectedDrive
+        {
+            get
+            {
+                return _SelectedDrive;
+            }
+            set
+            {
+                _SelectedDrive = value;
+                OnPropertyChanged("SelectedDrive");
+            }
+        }
     
     }
     
         
 }
-
-    
-

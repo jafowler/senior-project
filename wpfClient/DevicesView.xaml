@@ -8,7 +8,8 @@
              ">
     <Grid Margin="0,10,0,-50">
         <ListView x:Name="SystemDevicesListView" 
-                  ItemsSource="{Binding SelectedSystem.myDrives}" 
+                  ItemsSource="{Binding SelectedSystem.myDrives}"
+                  SelectedItem="{Binding SelectedDrive}"
                   VerticalAlignment="Top" 
                   Height="330" 
                   Margin="0,10,0,0">
@@ -18,5 +19,6 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
+        <Button x:Name="button" Content="Select Drive" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="75" Margin="0,0,0,52" />
     </Grid>
 </UserControl>

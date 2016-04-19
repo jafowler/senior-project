@@ -64,7 +64,6 @@
     <Compile Include="DevicesView.xaml.cs">
       <DependentUpon>DevicesView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="DevicesViewModel.cs" />
     <Compile Include="IAsyncCommand.cs" />
     <Compile Include="SystemView.xaml.cs">
       <DependentUpon>SystemView.xaml</DependentUpon>
