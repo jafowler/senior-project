@@ -19,9 +19,8 @@ namespace wcfServerApp
         [OperationContract]
         SysInfo collectDriveInformation();
 
-        [OperationContract]
-        [DllImport(@"..\Debug\BenchmarkDLL.dll")]
-        private extern void StartBenchmark(_benchmarkSettings.time,_benchmarkSettings.selectedDrive,_benchmarkSettings.packetSize);
+        [DllImport(@"BenchmarkDLL.dll")]
+        static extern void StartBenchmark();
     }
 
 
