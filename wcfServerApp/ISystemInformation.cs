@@ -6,6 +6,7 @@ using System.ServiceModel;
 using System.ServiceModel.Web;
 using System.Text;
 using sharedObjects;
+using System.Runtime.InteropServices;
 
 namespace wcfServerApp
 {
@@ -17,6 +18,10 @@ namespace wcfServerApp
         [WebGet(UriTemplate = "devices")]
         [OperationContract]
         SysInfo collectDriveInformation();
+
+        [OperationContract]
+        [DllImport(@"..\Debug\BenchmarkDLL.dll")]
+        private extern void StartBenchmark(_benchmarkSettings.time,_benchmarkSettings.selectedDrive,_benchmarkSettings.packetSize);
     }
 
 

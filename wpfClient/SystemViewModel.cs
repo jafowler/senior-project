@@ -14,7 +14,7 @@ namespace wpfClient
 {
     class SystemViewModel : INotifyPropertyChanged, IDataErrorInfo
     {
-        private string m_ipaddress = "Please input the starting IP address range";
+        private string m_ipaddress = "192.168.0";
         bool debug = true;
         public SystemViewModel()
         {
@@ -64,11 +64,12 @@ namespace wpfClient
         public void SendData()
         {
             var request = (HttpWebRequest)WebRequest.Create(SelectedSystem.ipAddress + ":8089/ServerApp/devices");
-            Trace.WriteLine(SelectedSystem.ipAddress + ":8089");
+            Trace.WriteLine("Selected IP: " + SelectedSystem.ipAddress + ":8089");
             request.Method = "POST";
-            var response = request.GetResponse();
-            var stream = new StreamWriter(response.GetResponseStream());
-            stream.Write(_benchmarkSettings);
+            request.Credentials = CredentialCache.DefaultCredentials;
+            var stream = request.GetRequestStream();
+            var dataSerializer = new DataContractSerializer(typeof(BenchmarkSettings));
+            dataSerializer.WriteObject(stream,_benchmarkSettings);
             stream.Close();
         }
 
@@ -108,7 +109,7 @@ namespace wpfClient
             try
             {
                 var request = (HttpWebRequest)WebRequest.Create(ipAddress + ":8089/ServerApp/devices");
-                Trace.WriteLine(ipAddress + ":8089");
+                //Trace.WriteLine(ipAddress + ":8089");
                 request.Method = "GET";
                 var response = request.GetResponse();
                 var stream = response.GetResponseStream();
@@ -116,14 +117,9 @@ namespace wpfClient
                 var test = (SysInfo)dataSerializer.ReadObject(stream);
                 return test;
             }
-            catch (WebException we)
-            {
-                Trace.WriteLine(we);
-                return null;
-            }
             catch (Exception e)
             {
-                    Trace.WriteLine(e);
+                Trace.WriteLine(e);
                 return null;
             }
         }
