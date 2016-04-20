@@ -63,7 +63,7 @@ namespace wpfClient
 
         public void SendData()
         {
-            var request = (HttpWebRequest)WebRequest.Create(SelectedSystem.ipAddress + ":8089/ServerApp/devices");
+            var request = (HttpWebRequest)WebRequest.Create(SelectedSystem.ipAddress + ":8089/ServerApp/listener");
             Trace.WriteLine("Selected IP: " + SelectedSystem.ipAddress + ":8089");
             request.Method = "POST";
             request.Credentials = CredentialCache.DefaultCredentials;
