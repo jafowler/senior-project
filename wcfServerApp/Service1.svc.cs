@@ -8,6 +8,8 @@ using System.Text;
 using System.Diagnostics;
 using System.IO;
 using sharedObjects;
+using System.Runtime.InteropServices;
+using System.Net;
 
 namespace wcfServerApp
 {
@@ -59,5 +61,20 @@ namespace wcfServerApp
             }
             return tempLine;
         }
+
+        public void GetBenchmarkData()
+        {
+            var request = (HttpWebRequest)WebRequest.Create("http://localhost:8089/ServerApp/listener");
+            //Trace.WriteLine(ipAddress + ":8089");
+            request.Method = "GET";
+            var response = request.GetResponse();
+            var stream = response.GetResponseStream();
+            var dataSerializer = new DataContractSerializer(typeof(SysInfo));
+            var benchmarkSettings = (BenchmarkSettings)dataSerializer.ReadObject(stream);
+            StartBenchmark(benchmarkSettings.time, benchmarkSettings.selectedDrive.physicalLoc, benchmarkSettings.packetSize);
+        }
+
+        [DllImport(@"../Debug/BenchmarkDLL.dll")]
+        static extern void StartBenchmark(int time, string physicalDrive, int packetSize);
     }
 }

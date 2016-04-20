@@ -19,8 +19,10 @@ namespace wcfServerApp
         [OperationContract]
         SysInfo collectDriveInformation();
 
-        [DllImport(@"BenchmarkDLL.dll")]
-        static extern void StartBenchmark();
+        
+        [OperationContract]
+        [WebInvoke(UriTemplate = "listener", Method = "POST")]
+        void GetBenchmarkData();
     }
 
 
