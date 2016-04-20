@@ -62,15 +62,8 @@ namespace wcfServerApp
             return tempLine;
         }
 
-        public void GetBenchmarkData()
+        public void GetBenchmarkData(BenchmarkSettings benchmarkSettings)
         {
-            var request = (HttpWebRequest)WebRequest.Create("http://localhost:8089/ServerApp/listener");
-            //Trace.WriteLine(ipAddress + ":8089");
-            request.Method = "GET";
-            var response = request.GetResponse();
-            var stream = response.GetResponseStream();
-            var dataSerializer = new DataContractSerializer(typeof(SysInfo));
-            var benchmarkSettings = (BenchmarkSettings)dataSerializer.ReadObject(stream);
             StartBenchmark(benchmarkSettings.time, benchmarkSettings.selectedDrive.physicalLoc, benchmarkSettings.packetSize);
         }
 
