@@ -64,10 +64,11 @@ namespace wcfServerApp
 
         public void GetBenchmarkData(BenchmarkSettings benchmarkSettings)
         {
+
             StartBenchmark(benchmarkSettings.time, benchmarkSettings.selectedDrive.physicalLoc, benchmarkSettings.packetSize);
         }
 
-        [DllImport(@"../Debug/BenchmarkDLL.dll")]
+        [DllImport(@"../../BenchamrkDLL/Debug/BenchmarkDLL.dll")]
         static extern void StartBenchmark(int time, string physicalDrive, int packetSize);
     }
 }

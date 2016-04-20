@@ -63,14 +63,21 @@ namespace wpfClient
 
         public void SendData()
         {
-            var request = (HttpWebRequest)WebRequest.Create(SelectedSystem.ipAddress + ":8089/ServerApp/listener");
+ 
+            var request = (HttpWebRequest)WebRequest.Create(SelectedSystem.ipAddress + ":8089/ServerApp/listner");
             Trace.WriteLine("Selected IP: " + SelectedSystem.ipAddress + ":8089");
             request.Method = "POST";
             request.Credentials = CredentialCache.DefaultCredentials;
-            var stream = request.GetRequestStream();
-            var dataSerializer = new DataContractSerializer(typeof(BenchmarkSettings));
-            dataSerializer.WriteObject(stream,_benchmarkSettings);
+            //request.PreAuthenticate = true;
+            //request.ContentType = "application/x-wwww-form-urlendcoded";
+            var stream = new StreamWriter(request.GetRequestStream(), System.Text.Encoding.ASCII);
+            stream.Write(_benchmarkSettings);
             stream.Close();
+
+            var response = (HttpWebResponse)request.GetResponse();
+            //var dataSerializer = new DataContractSerializer(typeof(BenchmarkSettings));
+            //dataSerializer.WriteObject(stream,_benchmarkSettings);
+            //stream.Close();
         }
 
         public async Task asyncGetNetworkSystems()
