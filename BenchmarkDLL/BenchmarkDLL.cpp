@@ -14,7 +14,7 @@ namespace Benchmark
 
 		while ((startTime / CLOCKS_PER_SEC) <= time)
 		{
-			if (time*.07 >= (startTime / CLOCKS_PER_SEC))
+			if (time*0.7 >= (startTime / CLOCKS_PER_SEC))
 			{
 				//do reads
 			}

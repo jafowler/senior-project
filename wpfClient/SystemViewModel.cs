@@ -54,30 +54,28 @@ namespace wpfClient
 
         public async Task asyncSendBenchmarkData()
         {
-            _benchmarkSettings.selectedDrive = SelectedDrive;
-            _benchmarkSettings.time = 600;
-            _benchmarkSettings.packetSize = 131072;
             var task = Task.Factory.StartNew(() => SendData());
             await task;
         }
 
         public void SendData()
         {
- 
-            var request = (HttpWebRequest)WebRequest.Create(SelectedSystem.ipAddress + ":8089/ServerApp/listner");
-            Trace.WriteLine("Selected IP: " + SelectedSystem.ipAddress + ":8089");
-            request.Method = "POST";
-            request.Credentials = CredentialCache.DefaultCredentials;
-            //request.PreAuthenticate = true;
-            //request.ContentType = "application/x-wwww-form-urlendcoded";
-            var stream = new StreamWriter(request.GetRequestStream(), System.Text.Encoding.ASCII);
-            stream.Write(_benchmarkSettings);
-            stream.Close();
+            _benchmarkSettings.selectedDrive = SelectedDrive;
+            _benchmarkSettings.time = 600;
+            _benchmarkSettings.packetSize = 131072;
+            var physLoc = SelectedDrive.physicalLoc;
 
+            var request = (HttpWebRequest)WebRequest.Create(SelectedSystem.ipAddress + ":8089/ServerApp/listener");
+            Trace.WriteLine(SelectedSystem.ipAddress + ":8089/ServerApp/listener");
+            request.Method = "POST";
+            request.ContentType = "application/json";
+            var stream = new StreamWriter(request.GetRequestStream(), System.Text.Encoding.ASCII);
+            stream.Write("{\"physicalLocation\":\""+ 
+                           SelectedDrive.physicalLoc[SelectedDrive.physicalLoc.Length-1]+ 
+                           "\",\"time\":\"600\",\"packetSize\":\"131072\"}");
+            stream.Close();
             var response = (HttpWebResponse)request.GetResponse();
-            //var dataSerializer = new DataContractSerializer(typeof(BenchmarkSettings));
-            //dataSerializer.WriteObject(stream,_benchmarkSettings);
-            //stream.Close();
+
         }
 
         public async Task asyncGetNetworkSystems()
@@ -93,13 +91,12 @@ namespace wpfClient
 
         public void parallelIPScan(List<SysInfo> tempList)
         {
-            m_ipaddress = "http://" + m_ipaddress + ".";
             Parallel.For(1, 255,
                    index => {
-                       var retval = getActiveSystemInformation(m_ipaddress + index);
+                       var retval = getActiveSystemInformation("http://" + m_ipaddress + "." + index);
                        if (retval != null && retval.myDrives.Count != 0)
                        {
-                           retval.ipAddress = m_ipaddress + index;
+                           retval.ipAddress = "http://"+ m_ipaddress + "." + index;
                            Application.Current.Dispatcher.Invoke(() =>
                            {
                                NetworkSystems.Add(retval);
@@ -126,7 +123,7 @@ namespace wpfClient
             }
             catch (Exception e)
             {
-                Trace.WriteLine(e);
+                //Trace.WriteLine(e);
                 return null;
             }
         }

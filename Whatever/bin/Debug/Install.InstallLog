@@ -834,3 +834,410 @@ Affected parameters are:
    logtoconsole = 
    logfile = C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.InstallLog
    assemblypath = C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.exe
+Uninstalling assembly 'C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.InstallLog
+   assemblypath = C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.exe
+Removing EventLog source TestService.
+Service TestService is being removed from the system...
+Service TestService was successfully removed from the system.
+Installing assembly 'C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.InstallLog
+   assemblypath = C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.exe
+Installing service TestService...
+Service TestService has been successfully installed.
+Creating EventLog source TestService in log Application...
+Committing assembly 'C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.InstallLog
+   assemblypath = C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.exe
+Uninstalling assembly 'C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.InstallLog
+   assemblypath = C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.exe
+Removing EventLog source TestService.
+Service TestService is being removed from the system...
+Service TestService was successfully removed from the system.
+Attempt to stop service TestService.
+Installing assembly 'C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.InstallLog
+   assemblypath = C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.exe
+Installing service TestService...
+Service TestService has been successfully installed.
+Creating EventLog source TestService in log Application...
+Committing assembly 'C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.InstallLog
+   assemblypath = C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.exe
+Uninstalling assembly 'C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.InstallLog
+   assemblypath = C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.exe
+Removing EventLog source TestService.
+Service TestService is being removed from the system...
+Service TestService was successfully removed from the system.
+Installing assembly 'C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.InstallLog
+   assemblypath = C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.exe
+Installing service TestService...
+Service TestService has been successfully installed.
+Creating EventLog source TestService in log Application...
+Committing assembly 'C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.InstallLog
+   assemblypath = C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.exe
+Uninstalling assembly 'C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.InstallLog
+   assemblypath = C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.exe
+Removing EventLog source TestService.
+Service TestService is being removed from the system...
+Service TestService was successfully removed from the system.
+Installing assembly 'C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.InstallLog
+   assemblypath = C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.exe
+Installing service TestService...
+Service TestService has been successfully installed.
+Creating EventLog source TestService in log Application...
+Committing assembly 'C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.InstallLog
+   assemblypath = C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.exe
+Uninstalling assembly 'C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.InstallLog
+   assemblypath = C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.exe
+Removing EventLog source TestService.
+Service TestService is being removed from the system...
+Service TestService was successfully removed from the system.
+Installing assembly 'C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.InstallLog
+   assemblypath = C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.exe
+Installing service TestService...
+Service TestService has been successfully installed.
+Creating EventLog source TestService in log Application...
+Committing assembly 'C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.InstallLog
+   assemblypath = C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.exe
+Uninstalling assembly 'C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.InstallLog
+   assemblypath = C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.exe
+Removing EventLog source TestService.
+Service TestService is being removed from the system...
+Service TestService was successfully removed from the system.
+Installing assembly 'C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.InstallLog
+   assemblypath = C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.exe
+Installing service TestService...
+Service TestService has been successfully installed.
+Creating EventLog source TestService in log Application...
+Committing assembly 'C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.InstallLog
+   assemblypath = C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.exe
+Uninstalling assembly 'C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.InstallLog
+   assemblypath = C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.exe
+Removing EventLog source TestService.
+Service TestService is being removed from the system...
+Service TestService was successfully removed from the system.
+Attempt to stop service TestService.
+Installing assembly 'C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.InstallLog
+   assemblypath = C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.exe
+Installing service TestService...
+Service TestService has been successfully installed.
+Creating EventLog source TestService in log Application...
+Committing assembly 'C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.InstallLog
+   assemblypath = C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.exe
+Uninstalling assembly 'C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.InstallLog
+   assemblypath = C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.exe
+Removing EventLog source TestService.
+Service TestService is being removed from the system...
+Service TestService was successfully removed from the system.
+Attempt to stop service TestService.
+Installing assembly 'C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.InstallLog
+   assemblypath = C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.exe
+Installing service TestService...
+Service TestService has been successfully installed.
+Creating EventLog source TestService in log Application...
+Committing assembly 'C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.InstallLog
+   assemblypath = C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.exe
+Uninstalling assembly 'C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.InstallLog
+   assemblypath = C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.exe
+Removing EventLog source TestService.
+Service TestService is being removed from the system...
+Service TestService was successfully removed from the system.
+Installing assembly 'C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.InstallLog
+   assemblypath = C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.exe
+Installing service TestService...
+Service TestService has been successfully installed.
+Creating EventLog source TestService in log Application...
+Committing assembly 'C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.InstallLog
+   assemblypath = C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.exe
+Uninstalling assembly 'C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.InstallLog
+   assemblypath = C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.exe
+Removing EventLog source TestService.
+Service TestService is being removed from the system...
+Service TestService was successfully removed from the system.
+Installing assembly 'C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.InstallLog
+   assemblypath = C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.exe
+Installing service TestService...
+Service TestService has been successfully installed.
+Creating EventLog source TestService in log Application...
+Committing assembly 'C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.InstallLog
+   assemblypath = C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.exe
+Uninstalling assembly 'C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.InstallLog
+   assemblypath = C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.exe
+Removing EventLog source TestService.
+Service TestService is being removed from the system...
+Service TestService was successfully removed from the system.
+Installing assembly 'C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.InstallLog
+   assemblypath = C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.exe
+Installing service TestService...
+Service TestService has been successfully installed.
+Creating EventLog source TestService in log Application...
+Committing assembly 'C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.InstallLog
+   assemblypath = C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.exe
+Uninstalling assembly 'C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.InstallLog
+   assemblypath = C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.exe
+Removing EventLog source TestService.
+Service TestService is being removed from the system...
+Service TestService was successfully removed from the system.
+Installing assembly 'C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.InstallLog
+   assemblypath = C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.exe
+Installing service TestService...
+Service TestService has been successfully installed.
+Creating EventLog source TestService in log Application...
+Committing assembly 'C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.InstallLog
+   assemblypath = C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.exe
+Uninstalling assembly 'C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.InstallLog
+   assemblypath = C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.exe
+Removing EventLog source TestService.
+Service TestService is being removed from the system...
+Service TestService was successfully removed from the system.
+Attempt to stop service TestService.
+Installing assembly 'C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.InstallLog
+   assemblypath = C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.exe
+Installing service TestService...
+Service TestService has been successfully installed.
+Creating EventLog source TestService in log Application...
+Committing assembly 'C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.InstallLog
+   assemblypath = C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.exe
+Uninstalling assembly 'C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.InstallLog
+   assemblypath = C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.exe
+Removing EventLog source TestService.
+Service TestService is being removed from the system...
+Service TestService was successfully removed from the system.
+Installing assembly 'C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.InstallLog
+   assemblypath = C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.exe
+Installing service TestService...
+Service TestService has been successfully installed.
+Creating EventLog source TestService in log Application...
+Committing assembly 'C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.InstallLog
+   assemblypath = C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.exe
+Uninstalling assembly 'C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.InstallLog
+   assemblypath = C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.exe
+Removing EventLog source TestService.
+Service TestService is being removed from the system...
+Service TestService was successfully removed from the system.
+Installing assembly 'C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.InstallLog
+   assemblypath = C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.exe
+Installing service TestService...
+Service TestService has been successfully installed.
+Creating EventLog source TestService in log Application...
+Committing assembly 'C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.InstallLog
+   assemblypath = C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.exe
+Uninstalling assembly 'C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.InstallLog
+   assemblypath = C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.exe
+Removing EventLog source TestService.
+Service TestService is being removed from the system...
+Service TestService was successfully removed from the system.
+Attempt to stop service TestService.
+Installing assembly 'C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.InstallLog
+   assemblypath = C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.exe
+Installing service TestService...
+Service TestService has been successfully installed.
+Creating EventLog source TestService in log Application...
+Committing assembly 'C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.InstallLog
+   assemblypath = C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.exe
+Uninstalling assembly 'C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.InstallLog
+   assemblypath = C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.exe
+Removing EventLog source TestService.
+Service TestService is being removed from the system...
+Service TestService was successfully removed from the system.
+Attempt to stop service TestService.
+Installing assembly 'C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.InstallLog
+   assemblypath = C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.exe
+Installing service TestService...
+Service TestService has been successfully installed.
+Creating EventLog source TestService in log Application...
+Committing assembly 'C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.InstallLog
+   assemblypath = C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.exe
+Uninstalling assembly 'C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.InstallLog
+   assemblypath = C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.exe
+Removing EventLog source TestService.
+Service TestService is being removed from the system...
+Service TestService was successfully removed from the system.
+Attempt to stop service TestService.
+Installing assembly 'C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.InstallLog
+   assemblypath = C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.exe
+Installing service TestService...
+Service TestService has been successfully installed.
+Creating EventLog source TestService in log Application...
+Committing assembly 'C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.InstallLog
+   assemblypath = C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.exe
+Uninstalling assembly 'C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.InstallLog
+   assemblypath = C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.exe
+Removing EventLog source TestService.
+Service TestService is being removed from the system...
+Service TestService was successfully removed from the system.
+Attempt to stop service TestService.
+Installing assembly 'C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.InstallLog
+   assemblypath = C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.exe
+Installing service TestService...
+Service TestService has been successfully installed.
+Creating EventLog source TestService in log Application...
+Committing assembly 'C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.InstallLog
+   assemblypath = C:\Users\Xinnk\Documents\GitHub\senior-project\Whatever\bin\Debug\Install.exe

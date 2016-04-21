@@ -23,9 +23,10 @@ namespace wcfServerApp
         [OperationContract]
         [WebInvoke(UriTemplate = "listener",
                    Method = "POST",
-                   ResponseFormat = WebMessageFormat.Xml,
-                   RequestFormat = WebMessageFormat.Xml)]
-        void GetBenchmarkData(BenchmarkSettings benchmarkSettings);
+                   ResponseFormat = WebMessageFormat.Json,
+                   RequestFormat = WebMessageFormat.Json,
+                   BodyStyle = WebMessageBodyStyle.WrappedRequest)]
+        void GetBenchmarkData(string physicalLocation, string time, string packetSize);
     }
 
 

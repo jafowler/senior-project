@@ -62,13 +62,14 @@ namespace wcfServerApp
             return tempLine;
         }
 
-        public void GetBenchmarkData(BenchmarkSettings benchmarkSettings)
+        public void GetBenchmarkData(string physicalLocation, string time, string packetSize)
         {
-
-            StartBenchmark(benchmarkSettings.time, benchmarkSettings.selectedDrive.physicalLoc, benchmarkSettings.packetSize);
+            var physLoc = "\\\\.\\PhysicalDrive" + physicalLocation;
+            System.IO.File.AppendAllText(@"C:\fuckingbullshitseniorproject.txt", physLoc + "\r\n" + time+"\r\n"+packetSize);
+            // StartBenchmark(Int32.Parse(time), physicalLocation,Int32.Parse(packetSize));
         }
 
-        [DllImport(@"../../BenchamrkDLL/Debug/BenchmarkDLL.dll")]
-        static extern void StartBenchmark(int time, string physicalDrive, int packetSize);
+        //[DllImport(@"../../../Debug/BenchmarkDLL.dll")]
+        //static extern void StartBenchmark(int time, string physicalDrive, int packetSize);
     }
 }
