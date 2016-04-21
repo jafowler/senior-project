@@ -1,18 +1,20 @@
 #pragma once
 //BenchmarkDLL.h
 
-#ifdef BENCHMARKDLL_EXPORTS
-#define BENCHMARKDLL_API __declspec(dllexport)
-#else
-#define BENCHMARKDLL_API __declspec(dllimport)
+
+#ifdef __cplusplus
+extern "C" {
 #endif
 
-namespace Benchmark
-{
-	class MyBenchmark 
-	{
-		public:
-			static BENCHMARKDLL_API void StartBenchmark(int time, string physicalDive, int packetSize);
-	};
-	
+#ifdef WIN32
+#define EXPORT __declspec(dllexport)
+#else
+#define EXPORT extern
+#endif
+	EXPORT void StartBenchmark(unsigned long time, char* physicalDrive, unsigned long packetSize);
+	EXPORT void PrintToErrorLog();
+#undef EXPORT
+
+#ifdef __cplusplus
 }
+#endif

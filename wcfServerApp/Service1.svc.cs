@@ -61,15 +61,25 @@ namespace wcfServerApp
             }
             return tempLine;
         }
+        internal static class NativeMethods
+        {
+            [DllImport(@"C:\BenchmarkDLL\BenchmarkDLL.dll", CallingConvention = CallingConvention.Cdecl, CharSet = CharSet.Ansi, BestFitMapping = false, ThrowOnUnmappableChar = true)]
+            public static extern void StartBenchmark(int time, StringBuilder physicalDrive, int packetSize);
+
+            [DllImport(@"C:\BenchmarkDLL\BenchmarkDLL.dll", CallingConvention = CallingConvention.Cdecl)]
+            public static extern void PrintToErrorLog();
+        }
+
 
         public void GetBenchmarkData(string physicalLocation, string time, string packetSize)
         {
             var physLoc = "\\\\.\\PhysicalDrive" + physicalLocation;
-            System.IO.File.AppendAllText(@"C:\fuckingbullshitseniorproject.txt", physLoc + "\r\n" + time+"\r\n"+packetSize);
-            // StartBenchmark(Int32.Parse(time), physicalLocation,Int32.Parse(packetSize));
-        }
+            var stringBuilder = new StringBuilder(physicalLocation);
+            System.IO.File.AppendAllText(@"C:\seniorprojectlog.txt", "\r\n"+physLoc + "\r\n" + time+"\r\n"+packetSize);
 
-        //[DllImport(@"../../../Debug/BenchmarkDLL.dll")]
-        //static extern void StartBenchmark(int time, string physicalDrive, int packetSize);
+            //StartBenchmark(Int32.Parse(time), stringBuilder,Int32.Parse(packetSize));
+            //NativeMethods.PrintToErrorLog();
+
+        } 
     }
 }

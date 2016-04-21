@@ -15,7 +15,7 @@ namespace wpfClient
     class SystemViewModel : INotifyPropertyChanged, IDataErrorInfo
     {
         private string m_ipaddress = "192.168.0";
-        bool debug = true;
+        bool debug = false;
         public SystemViewModel()
         {
             NetworkSystems = new ObservableCollection<SysInfo>();

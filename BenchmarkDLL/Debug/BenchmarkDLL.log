@@ -1,2 +1,4 @@
 ﻿  BenchmarkDLL.cpp
-c:\users\xinnk\documents\github\senior-project\benchmarkdll\benchmarkdll.h(15): error C2061: syntax error: identifier 'string'
+c:\users\xinnk\documents\github\senior-project\benchmarkdll\benchmarkdll.cpp(23): warning C4129: 'e': unrecognized character escape sequence
+     Creating library C:\Users\Xinnk\Documents\GitHub\senior-project\Debug\BenchmarkDLL.lib and object C:\Users\Xinnk\Documents\GitHub\senior-project\Debug\BenchmarkDLL.exp
+  BenchmarkDLL.vcxproj -> C:\Users\Xinnk\Documents\GitHub\senior-project\Debug\BenchmarkDLL.dll
