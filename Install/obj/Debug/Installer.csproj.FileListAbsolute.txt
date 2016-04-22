@@ -1,0 +1,2 @@
+C:\Users\Xinnk\Documents\Visual Studio 2015\Projects\wpfServerGUI\Whatever\obj\Debug\Installer.csprojResolveAssemblyReference.cache
+C:\Users\Xinnk\Documents\Visual Studio 2015\Projects\wpfServerGUI\Whatever\bin\Debug\Install.exe.config

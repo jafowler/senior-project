@@ -1,0 +1,10 @@
+C:\Users\Xinnk\Documents\Visual Studio 2015\Projects\wpfServerGUI\Whatever\bin\Debug\Whatever.exe.config
+C:\Users\Xinnk\Documents\Visual Studio 2015\Projects\wpfServerGUI\Whatever\bin\Debug\Whatever.exe
+C:\Users\Xinnk\Documents\Visual Studio 2015\Projects\wpfServerGUI\Whatever\bin\Debug\Whatever.pdb
+C:\Users\Xinnk\Documents\Visual Studio 2015\Projects\wpfServerGUI\Whatever\obj\Debug\Whatever.csprojResolveAssemblyReference.cache
+C:\Users\Xinnk\Documents\Visual Studio 2015\Projects\wpfServerGUI\Whatever\obj\Debug\Whatever.exe
+C:\Users\Xinnk\Documents\Visual Studio 2015\Projects\wpfServerGUI\Whatever\obj\Debug\Whatever.pdb
+C:\Users\Xinnk\Documents\Visual Studio 2015\Projects\wpfServerGUI\Whatever\bin\Debug\ApplicationInsights.config
+C:\Users\Xinnk\Documents\Visual Studio 2015\Projects\wpfServerGUI\Whatever\bin\Debug\wcfServerApp.dll
+C:\Users\Xinnk\Documents\Visual Studio 2015\Projects\wpfServerGUI\Whatever\bin\Debug\wcfServerApp.pdb
+C:\Users\Xinnk\Documents\Visual Studio 2015\Projects\wpfServerGUI\Whatever\bin\Debug\Installer.exe.config

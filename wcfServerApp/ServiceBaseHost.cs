@@ -14,7 +14,7 @@ namespace wcfServerApp
         public ServiceHost serviceHost = null;
         public ServiceBaseHost()
         {
-            ServiceName = "TestService";
+            ServiceName = "BenchmarkService";
         }
 
         protected override void OnStart(string[] args)
