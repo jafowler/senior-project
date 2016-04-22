@@ -3,40 +3,33 @@
 
 #include "stdafx.h"
 #include "BenchmarkDLL.h"
-#include <string>
 #include <ctime>
-#include <chrono>
 #include <stdio.h>
 #include <stdlib.h>
-#include <vector>
+#include <sstream>
 #include <iostream>
 #include <fstream>
-#include <sstream>
+#include <conio.h>
 using namespace std;
-
-
 
 void PrintToErrorLog()
 {
-	MessageBox(0, "PrintToErrorLog!\n", "Hi", MB_ICONINFORMATION);
 	ofstream errorLog;
-	errorLog.open("C:\errorlog.txt");
+	errorLog.open("C:\\BenchmarkDLL\\errorlog.txt");
 	errorLog << "testinggggg";
 	errorLog.close();
+	printf("This is a thing");
 
 }
-void StartBenchmark(unsigned long time, char* physicalDrive, unsigned long packetSize)
+void StartBenchmark(unsigned long timer, char* physicalDrive, unsigned long packetSize)
 {
-	//start clocks for time
-	clock_t _time = clock();
-	double firstTime;
-	double secondTime;
-	double differenceT;
-
 	//create file handles
 	ostringstream convert;
-	ofstream readFile("readTimes.txt");
-	ofstream writeFile("writeTimes.txt");
+	ofstream readFile("C:\\BenchmarkDLL\\readTimes.txt");
+	ofstream writeFile("C:\\BenchmarkDLL\\writeTimes.txt");
+	ofstream errorLog("C:\\BenchmarkDLL\\errorlog.txt");
+	errorLog << physicalDrive << "\n";
+
 	// creating a buffer for writing to the drive.
 	LPVOID DataBuffer = VirtualAlloc(NULL, packetSize, MEM_COMMIT, PAGE_READWRITE);
 	memset(DataBuffer, 0xCC, packetSize);
@@ -44,6 +37,8 @@ void StartBenchmark(unsigned long time, char* physicalDrive, unsigned long packe
 	DWORD dwBytesToWrite = packetSize;
 	DWORD dwBytesWritten = 0;
 	DWORD retVal = 0;
+
+	
 
 #pragma region  hDrive
 
@@ -59,19 +54,25 @@ void StartBenchmark(unsigned long time, char* physicalDrive, unsigned long packe
 	if (hDrive == INVALID_HANDLE_VALUE)
 	{
 		retVal = GetLastError();
-		printf("Couldn't open the drive! : " + retVal);
+		errorLog << (char*)retVal;
 		system("pause");
 		return;
 	}
 
 #pragma endregion Creates the handle for the storage device
+	//start clocks for time
+	time_t start = time(NULL);
+	time_t firstTime, end;
+	time_t timeLeft = start+timer;
+	time_t twoThirds = start+(timer*0.7);
+	errorLog << time(NULL)+timer << endl;
 
-	while ((_time / CLOCKS_PER_SEC) <= _time)
+	while ( time(NULL) <= timeLeft)
 	{
-		if (_time*0.7 >= (_time / CLOCKS_PER_SEC))
+		if (time(NULL) <= twoThirds)
 		{
 			//do reads
-			firstTime = _time;
+			firstTime = time(0);
 			retVal = ReadFile(hDrive,
 				DataBuffer,
 				dwBytesToWrite,
@@ -80,20 +81,23 @@ void StartBenchmark(unsigned long time, char* physicalDrive, unsigned long packe
 			if (FALSE == retVal)
 			{
 				retVal = GetLastError();
-				printf("Couldn't Read from drive! : " + retVal);
+				printf((char*)retVal);
 				system("pause");
 				return;
 			}
-			secondTime = _time;
-			differenceT = secondTime - firstTime;
-			convert << differenceT;
-			readFile << "\n" + convert.str();
+			else
+			{
+				end = time(0);
+				readFile << "\n 128k Read: " << end - start << endl;;
+				timeLeft -= (end - start);
+			}
+		
 		}
 		else
 		{
-			firstTime = _time;
+			
 #pragma region WriteFile
-
+			firstTime = time(0);
 			retVal = WriteFile(hDrive,
 				DataBuffer,
 				dwBytesToWrite,
@@ -104,7 +108,7 @@ void StartBenchmark(unsigned long time, char* physicalDrive, unsigned long packe
 			if (FALSE == retVal)
 			{
 				retVal = GetLastError();
-				printf("Couldn't write to drive! : " + retVal);
+				printf((char*)retVal);
 				system("pause");
 				return;
 			}
@@ -121,19 +125,21 @@ void StartBenchmark(unsigned long time, char* physicalDrive, unsigned long packe
 				}
 				else
 				{
+					end = time(0);
+					timeLeft -= (end - start);
+					writeFile << "\n 128k Write: " << end - start << endl;
 					//printf(("Wrote %d bytes to %s successfully.\n"), dwBytesWritten, myDrives[0].physicalLoc.c_str());
 				}
 			}
 
 #pragma endregion Attempts to Write to the file, and outputs errors otherwise
-			secondTime = _time;
-			differenceT = secondTime - firstTime;
-			convert << differenceT;
-			writeFile << "\n" + convert.str();
+			
+						
 		}
 	}
 	readFile.close();
 	writeFile.close();
 }
+
 
 

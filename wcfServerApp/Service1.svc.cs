@@ -61,24 +61,22 @@ namespace wcfServerApp
             }
             return tempLine;
         }
-        internal static class NativeMethods
-        {
-            [DllImport(@"C:\BenchmarkDLL\BenchmarkDLL.dll", CallingConvention = CallingConvention.Cdecl, CharSet = CharSet.Ansi, BestFitMapping = false, ThrowOnUnmappableChar = true)]
-            public static extern void StartBenchmark(int time, StringBuilder physicalDrive, int packetSize);
 
-            [DllImport(@"C:\BenchmarkDLL\BenchmarkDLL.dll", CallingConvention = CallingConvention.Cdecl)]
-            public static extern void PrintToErrorLog();
-        }
+        [DllImport(@"C:\\BenchmarkDLL\\BenchmarkDLL.dll")]
+        public static extern void StartBenchmark(int timer, StringBuilder physicalDrive, int packetSize);
+
+        [DllImport(@"C:\\BenchmarkDLL\\BenchmarkDLL.dll")]
+        public static extern void PrintToErrorLog();
+      
 
 
         public void GetBenchmarkData(string physicalLocation, string time, string packetSize)
         {
             var physLoc = "\\\\.\\PhysicalDrive" + physicalLocation;
-            var stringBuilder = new StringBuilder(physicalLocation);
+            var stringBuilder = new StringBuilder(physLoc);
             System.IO.File.AppendAllText(@"C:\seniorprojectlog.txt", "\r\n"+physLoc + "\r\n" + time+"\r\n"+packetSize);
-
-            //StartBenchmark(Int32.Parse(time), stringBuilder,Int32.Parse(packetSize));
-            //NativeMethods.PrintToErrorLog();
+            StartBenchmark(Int32.Parse(time), stringBuilder,Int32.Parse(packetSize));
+            //PrintToErrorLog();
 
         } 
     }

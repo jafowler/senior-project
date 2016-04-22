@@ -61,7 +61,7 @@ namespace wpfClient
         public void SendData()
         {
             _benchmarkSettings.selectedDrive = SelectedDrive;
-            _benchmarkSettings.time = 600;
+            _benchmarkSettings.time = 300;
             _benchmarkSettings.packetSize = 131072;
             var physLoc = SelectedDrive.physicalLoc;
 
