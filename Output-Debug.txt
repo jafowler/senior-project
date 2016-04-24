@@ -1,0 +1,19 @@
+﻿'wpfClient.exe' (CLR v4.0.30319: DefaultDomain): Loaded 'C:\Windows\Microsoft.Net\assembly\GAC_32\mscorlib\v4.0_4.0.0.0__b77a5c561934e089\mscorlib.dll'. Symbols loaded.
+'wpfClient.exe' (CLR v4.0.30319: DefaultDomain): Loaded 'C:\Users\Xinnk\Documents\GitHub\senior-project\wpfClient\bin\Debug\wpfClient.exe'. Symbols loaded.
+'wpfClient.exe' (CLR v4.0.30319: wpfClient.exe): Loaded 'C:\Windows\Microsoft.Net\assembly\GAC_MSIL\PresentationFramework\v4.0_4.0.0.0__31bf3856ad364e35\PresentationFramework.dll'. Symbols loaded.
+'wpfClient.exe' (CLR v4.0.30319: wpfClient.exe): Loaded 'C:\Windows\Microsoft.Net\assembly\GAC_MSIL\WindowsBase\v4.0_4.0.0.0__31bf3856ad364e35\WindowsBase.dll'. Symbols loaded.
+'wpfClient.exe' (CLR v4.0.30319: wpfClient.exe): Loaded 'C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Core\v4.0_4.0.0.0__b77a5c561934e089\System.Core.dll'. Symbols loaded.
+'wpfClient.exe' (CLR v4.0.30319: wpfClient.exe): Loaded 'C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System\v4.0_4.0.0.0__b77a5c561934e089\System.dll'. Symbols loaded.
+'wpfClient.exe' (CLR v4.0.30319: wpfClient.exe): Loaded 'C:\Windows\Microsoft.Net\assembly\GAC_32\PresentationCore\v4.0_4.0.0.0__31bf3856ad364e35\PresentationCore.dll'. Symbols loaded.
+'wpfClient.exe' (CLR v4.0.30319: wpfClient.exe): Loaded 'C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Xaml\v4.0_4.0.0.0__b77a5c561934e089\System.Xaml.dll'. Symbols loaded.
+'wpfClient.exe' (CLR v4.0.30319: wpfClient.exe): Loaded 'C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Configuration\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Configuration.dll'. Symbols loaded.
+'wpfClient.exe' (CLR v4.0.30319: wpfClient.exe): Loaded 'C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Xml\v4.0_4.0.0.0__b77a5c561934e089\System.Xml.dll'. Symbols loaded.
+'wpfClient.exe' (CLR v4.0.30319: wpfClient.exe): Loaded 'C:\Users\Xinnk\Documents\GitHub\senior-project\wpfClient\bin\Debug\sharedObjects.dll'. Symbols loaded.
+'wpfClient.exe' (CLR v4.0.30319: wpfClient.exe): Loaded 'C:\Windows\Microsoft.Net\assembly\GAC_MSIL\PresentationFramework.Aero2\v4.0_4.0.0.0__31bf3856ad364e35\PresentationFramework.Aero2.dll'. Symbols loaded.
+'wpfClient.exe' (CLR v4.0.30319: wpfClient.exe): Loaded 'C:\Windows\Microsoft.Net\assembly\GAC_MSIL\PresentationFramework-SystemXml\v4.0_4.0.0.0__b77a5c561934e089\PresentationFramework-SystemXml.dll'. Symbols loaded.
+'wpfClient.exe' (CLR v4.0.30319: wpfClient.exe): Loaded 'C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Runtime.Serialization\v4.0_4.0.0.0__b77a5c561934e089\System.Runtime.Serialization.dll'. Symbols loaded.
+'wpfClient.exe' (CLR v4.0.30319: wpfClient.exe): Loaded 'C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\COMMONEXTENSIONS\MICROSOFT\CLIENTDIAGNOSTICS\XAMLDIAGNOSTICS\x86\WpfXamlDiagnosticsTap.dll'. Symbols loaded.
+'wpfClient.exe' (CLR v4.0.30319: wpfClient.exe): Loaded 'C:\Windows\assembly\GAC\Microsoft.VisualStudio.OLE.Interop\7.1.40304.0__b03f5f7f11d50a3a\Microsoft.VisualStudio.OLE.Interop.dll'. Module was built without symbols.
+'wpfClient.exe' (CLR v4.0.30319: wpfClient.exe): Loaded 'C:\Windows\Microsoft.Net\assembly\GAC_MSIL\UIAutomationTypes\v4.0_4.0.0.0__31bf3856ad364e35\UIAutomationTypes.dll'. Symbols loaded.
+The thread 0x10354 has exited with code 0 (0x0).
+The program '[59360] wpfClient.exe' has exited with code 0 (0x0).

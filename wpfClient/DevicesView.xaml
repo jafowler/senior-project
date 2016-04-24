@@ -25,6 +25,6 @@
                 VerticalAlignment="Bottom" 
                 HorizontalAlignment="Right" 
                 Width="75" 
-                Margin="0,0,0,23" />
+                Margin="0,0,0,21" RenderTransformOrigin="1.984,0.55" />
     </Grid>
 </UserControl>

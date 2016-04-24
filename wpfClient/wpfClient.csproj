@@ -71,6 +71,9 @@
     <Compile Include="AsyncCommand.cs" />
     <Compile Include="AsyncCommandBase.cs" />
     <Compile Include="BenchmarkSettingsView.cs" />
+    <Compile Include="BenchmarkView.xaml.cs">
+      <DependentUpon>BenchmarkView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="DevicesView.xaml.cs">
       <DependentUpon>DevicesView.xaml</DependentUpon>
     </Compile>
@@ -79,6 +82,10 @@
       <DependentUpon>SystemView.xaml</DependentUpon>
     </Compile>
     <Compile Include="SystemViewModel.cs" />
+    <Page Include="BenchmarkView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="DevicesView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

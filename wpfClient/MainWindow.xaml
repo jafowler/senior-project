@@ -9,9 +9,10 @@
     <Window.DataContext>
         <local:SystemViewModel/>
     </Window.DataContext>
-    <Grid>
+    <Grid Margin="0,0,2,0">
         <local:SystemView DataContext="{Binding}" VerticalAlignment="Stretch" HorizontalAlignment="Left" Height="371" Width="337" Margin="0,0,0,1"/>
-        <local:DevicesView DataContext="{Binding}" VerticalAlignment="Stretch" HorizontalAlignment="Left" Height="371" Width="200" Margin="337,0,442,10"/>
+        <local:DevicesView DataContext="{Binding}" VerticalAlignment="Stretch" HorizontalAlignment="Left" Height="371" Width="236" Margin="337,0,0,1"/>
+        <local:BenchmarkView HorizontalAlignment="Left" Margin="573,26,0,0" VerticalAlignment="Top" Height="336" Width="407"/>
     </Grid>
 
 </Window>

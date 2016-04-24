@@ -92,7 +92,7 @@ void StartBenchmark(unsigned long timer, char* physicalDrive, unsigned long pack
 			{
 				QueryPerformanceCounter(&currentTime);
 				elapsedMs = ((currentTime.QuadPart - lastRecordedTime.QuadPart) * 1000.0) / frequency.QuadPart;
-				readFile << "128k Read: " << elapsedMs << endl;
+				readFile << packetSize <<" Read: " << elapsedMs << endl;
 				lastRecordedTime = currentTime;
 				totalElapsed += elapsedMs;
 			}

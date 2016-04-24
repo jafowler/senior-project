@@ -15,6 +15,8 @@ namespace wpfClient
     class SystemViewModel : INotifyPropertyChanged, IDataErrorInfo
     {
         private string m_ipaddress = "192.168.0";
+        public int m_userTime = 300;
+        public int m_userPacketSize = 128;
         bool debug = false;
         public SystemViewModel()
         {
@@ -61,8 +63,8 @@ namespace wpfClient
             try
             {
                 _benchmarkSettings.selectedDrive = SelectedDrive;
-                _benchmarkSettings.time = 300;
-                _benchmarkSettings.packetSize = 131072;
+                _benchmarkSettings.time = m_userTime;
+                _benchmarkSettings.packetSize = m_userPacketSize*1024;
                 var physLoc = SelectedDrive.physicalLoc;
 
                 var request = (HttpWebRequest)WebRequest.Create(SelectedSystem.ipAddress + ":8089/ServerApp/listener");
@@ -106,6 +108,8 @@ namespace wpfClient
                        }
                    });
         }
+
+        public BenchmarkSettings _benchmarkSettings = new BenchmarkSettings();
         public delegate void UpdateTextCallback(List<SysInfo> tempList);
         public IAsyncCommand Refresh { get; set; }
         public IAsyncCommand BenchmarkData { get; set; }
@@ -131,7 +135,38 @@ namespace wpfClient
         }
 
         public ObservableCollection<SysInfo> NetworkSystems{ get; private set; }
-        public string IPAddressRange {
+        public int UserTime
+        {
+            get
+            {
+                return m_userTime;
+            }
+            set
+            {
+                if (m_userTime != value)
+                {
+                    m_userTime = value;
+                    OnPropertyChanged("UserTime");
+                }
+            }
+        }
+        public int UserPacketSize
+        {
+            get
+            {
+                return m_userPacketSize;
+            }
+            set
+            {
+                if (m_userPacketSize != value)
+                {
+                    m_userPacketSize = value;
+                    OnPropertyChanged("UserPacketSize");
+                }
+            }
+        }
+        public string IPAddressRange
+        {
             get
             {
                 return m_ipaddress;
@@ -165,7 +200,7 @@ namespace wpfClient
             }
         }
 
-        public BenchmarkSettings _benchmarkSettings = new BenchmarkSettings();
+        
 
         public SysInfo _SelectedSystem = new SysInfo();
         public SysInfo SelectedSystem {
