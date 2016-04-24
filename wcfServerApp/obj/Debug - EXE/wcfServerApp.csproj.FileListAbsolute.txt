@@ -1,0 +1,20 @@
+C:\Users\Xinnk\Documents\GitHub\senior-project\wcfServerApp\bin\ApplicationInsights.config
+C:\Users\Xinnk\Documents\GitHub\senior-project\wcfServerApp\bin\wcfServerApp.dll
+C:\Users\Xinnk\Documents\GitHub\senior-project\wcfServerApp\bin\wcfServerApp.pdb
+C:\Users\Xinnk\Documents\GitHub\senior-project\wcfServerApp\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Xinnk\Documents\GitHub\senior-project\wcfServerApp\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Xinnk\Documents\GitHub\senior-project\wcfServerApp\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Xinnk\Documents\GitHub\senior-project\wcfServerApp\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Xinnk\Documents\GitHub\senior-project\wcfServerApp\bin\Microsoft.AI.Web.dll
+C:\Users\Xinnk\Documents\GitHub\senior-project\wcfServerApp\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Xinnk\Documents\GitHub\senior-project\wcfServerApp\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Xinnk\Documents\GitHub\senior-project\wcfServerApp\bin\sharedObjects.dll
+C:\Users\Xinnk\Documents\GitHub\senior-project\wcfServerApp\bin\sharedObjects.pdb
+C:\Users\Xinnk\Documents\GitHub\senior-project\wcfServerApp\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Xinnk\Documents\GitHub\senior-project\wcfServerApp\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Xinnk\Documents\GitHub\senior-project\wcfServerApp\bin\Microsoft.AI.Web.xml
+C:\Users\Xinnk\Documents\GitHub\senior-project\wcfServerApp\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Xinnk\Documents\GitHub\senior-project\wcfServerApp\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Xinnk\Documents\GitHub\senior-project\wcfServerApp\obj\Debug - EXE\wcfServerApp.csprojResolveAssemblyReference.cache
+C:\Users\Xinnk\Documents\GitHub\senior-project\wcfServerApp\obj\Debug - EXE\wcfServerApp.dll
+C:\Users\Xinnk\Documents\GitHub\senior-project\wcfServerApp\obj\Debug - EXE\wcfServerApp.pdb

@@ -1,0 +1,5 @@
+C:\Users\Xinnk\Documents\GitHub\senior-project\sharedObjects\bin\Debug - EXE\sharedObjects.dll
+C:\Users\Xinnk\Documents\GitHub\senior-project\sharedObjects\bin\Debug - EXE\sharedObjects.pdb
+C:\Users\Xinnk\Documents\GitHub\senior-project\sharedObjects\obj\Debug - EXE\sharedObjects.csprojResolveAssemblyReference.cache
+C:\Users\Xinnk\Documents\GitHub\senior-project\sharedObjects\obj\Debug - EXE\sharedObjects.dll
+C:\Users\Xinnk\Documents\GitHub\senior-project\sharedObjects\obj\Debug - EXE\sharedObjects.pdb

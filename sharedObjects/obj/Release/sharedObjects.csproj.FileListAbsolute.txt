@@ -7,3 +7,7 @@ C:\Users\jacob\Documents\GitHub\senior-project\sharedObjects\bin\Release\sharedO
 C:\Users\jacob\Documents\GitHub\senior-project\sharedObjects\bin\Release\sharedObjects.pdb
 C:\Users\jacob\Documents\GitHub\senior-project\sharedObjects\obj\Release\sharedObjects.dll
 C:\Users\jacob\Documents\GitHub\senior-project\sharedObjects\obj\Release\sharedObjects.pdb
+C:\Users\Xinnk\Documents\GitHub\senior-project\sharedObjects\bin\Release\sharedObjects.dll
+C:\Users\Xinnk\Documents\GitHub\senior-project\sharedObjects\bin\Release\sharedObjects.pdb
+C:\Users\Xinnk\Documents\GitHub\senior-project\sharedObjects\obj\Release\sharedObjects.dll
+C:\Users\Xinnk\Documents\GitHub\senior-project\sharedObjects\obj\Release\sharedObjects.pdb

@@ -1,0 +1,11 @@
+C:\Users\Xinnk\Documents\GitHub\senior-project\Install\bin\Debug - EXE\ApplicationInsights.config
+C:\Users\Xinnk\Documents\GitHub\senior-project\Install\bin\Debug - EXE\Install.exe.config
+C:\Users\Xinnk\Documents\GitHub\senior-project\Install\bin\Debug - EXE\Install.exe
+C:\Users\Xinnk\Documents\GitHub\senior-project\Install\bin\Debug - EXE\Install.pdb
+C:\Users\Xinnk\Documents\GitHub\senior-project\Install\bin\Debug - EXE\wcfServerApp.dll
+C:\Users\Xinnk\Documents\GitHub\senior-project\Install\bin\Debug - EXE\sharedObjects.dll
+C:\Users\Xinnk\Documents\GitHub\senior-project\Install\bin\Debug - EXE\wcfServerApp.pdb
+C:\Users\Xinnk\Documents\GitHub\senior-project\Install\bin\Debug - EXE\sharedObjects.pdb
+C:\Users\Xinnk\Documents\GitHub\senior-project\Install\obj\Debug - EXE\Install.csprojResolveAssemblyReference.cache
+C:\Users\Xinnk\Documents\GitHub\senior-project\Install\obj\Debug - EXE\Install.exe
+C:\Users\Xinnk\Documents\GitHub\senior-project\Install\obj\Debug - EXE\Install.pdb

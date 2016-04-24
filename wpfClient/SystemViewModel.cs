@@ -47,9 +47,7 @@ namespace wpfClient
 #endregion
             var uiScheduler = TaskScheduler.FromCurrentSynchronizationContext();
             Refresh = new AsyncCommand(()=>asyncGetNetworkSystems());
-            BenchmarkData = new AsyncCommand(()=> asyncSendBenchmarkData());
-
-            
+            BenchmarkData = new AsyncCommand(()=> asyncSendBenchmarkData());   
         }
 
         public async Task asyncSendBenchmarkData()
@@ -60,38 +58,42 @@ namespace wpfClient
 
         public void SendData()
         {
-            _benchmarkSettings.selectedDrive = SelectedDrive;
-            _benchmarkSettings.time = 300;
-            _benchmarkSettings.packetSize = 131072;
-            var physLoc = SelectedDrive.physicalLoc;
+            try
+            {
+                _benchmarkSettings.selectedDrive = SelectedDrive;
+                _benchmarkSettings.time = 300;
+                _benchmarkSettings.packetSize = 131072;
+                var physLoc = SelectedDrive.physicalLoc;
 
-            var request = (HttpWebRequest)WebRequest.Create(SelectedSystem.ipAddress + ":8089/ServerApp/listener");
-            Trace.WriteLine(SelectedSystem.ipAddress + ":8089/ServerApp/listener");
-            request.Method = "POST";
-            request.ContentType = "application/json";
-            var stream = new StreamWriter(request.GetRequestStream(), System.Text.Encoding.ASCII);
-            stream.Write("{\"physicalLocation\":\""+ 
-                           SelectedDrive.physicalLoc[SelectedDrive.physicalLoc.Length-1]+ 
-                           "\",\"time\":\"600\",\"packetSize\":\"131072\"}");
-            stream.Close();
-            var response = (HttpWebResponse)request.GetResponse();
+                var request = (HttpWebRequest)WebRequest.Create(SelectedSystem.ipAddress + ":8089/ServerApp/listener");
+                Trace.WriteLine(SelectedSystem.ipAddress + ":8089/ServerApp/listener");
+                request.Method = "POST";
+                request.ContentType = "application/json";
+                var stream = new StreamWriter(request.GetRequestStream(), System.Text.Encoding.ASCII);
+                stream.Write("{\"physicalLocation\":\"" +
+                               SelectedDrive.physicalLoc[SelectedDrive.physicalLoc.Length - 1] +
+                               "\",\"time\":\"600\",\"packetSize\":\"131072\"}");
+                stream.Close();
+                var response = (HttpWebResponse)request.GetResponse();
+            }
+            catch(Exception e)
+            {
+                Trace.WriteLine(e);
+            }
 
         }
 
         public async Task asyncGetNetworkSystems()
         {
-            
-            var tempList = new List<SysInfo>();
             NetworkSystems.Clear();
-            var task = Task.Factory.StartNew(() => parallelIPScan(tempList));
+            var task = Task.Factory.StartNew(() => parallelIPScan());
             await task;
         }
 
-        public delegate void UpdateTextCallback(List<SysInfo> tempList);
 
-        public void parallelIPScan(List<SysInfo> tempList)
+        public void parallelIPScan()
         {
-            Parallel.For(1, 255,
+            Parallel.For(230, 231,
                    index => {
                        var retval = getActiveSystemInformation("http://" + m_ipaddress + "." + index);
                        if (retval != null && retval.myDrives.Count != 0)
@@ -104,7 +106,7 @@ namespace wpfClient
                        }
                    });
         }
-
+        public delegate void UpdateTextCallback(List<SysInfo> tempList);
         public IAsyncCommand Refresh { get; set; }
         public IAsyncCommand BenchmarkData { get; set; }
 

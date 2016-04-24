@@ -20,3 +20,14 @@ C:\Users\jacob\Documents\GitHub\senior-project\Whatever\bin\Release\sharedObject
 C:\Users\jacob\Documents\GitHub\senior-project\Whatever\obj\Release\Install.csprojResolveAssemblyReference.cache
 C:\Users\jacob\Documents\GitHub\senior-project\Whatever\obj\Release\Install.exe
 C:\Users\jacob\Documents\GitHub\senior-project\Whatever\obj\Release\Install.pdb
+C:\Users\Xinnk\Documents\GitHub\senior-project\Install\bin\Release\ApplicationInsights.config
+C:\Users\Xinnk\Documents\GitHub\senior-project\Install\bin\Release\Install.exe.config
+C:\Users\Xinnk\Documents\GitHub\senior-project\Install\bin\Release\Install.exe
+C:\Users\Xinnk\Documents\GitHub\senior-project\Install\bin\Release\Install.pdb
+C:\Users\Xinnk\Documents\GitHub\senior-project\Install\bin\Release\wcfServerApp.dll
+C:\Users\Xinnk\Documents\GitHub\senior-project\Install\bin\Release\sharedObjects.dll
+C:\Users\Xinnk\Documents\GitHub\senior-project\Install\bin\Release\wcfServerApp.pdb
+C:\Users\Xinnk\Documents\GitHub\senior-project\Install\bin\Release\sharedObjects.pdb
+C:\Users\Xinnk\Documents\GitHub\senior-project\Install\obj\Release\Install.csprojResolveAssemblyReference.cache
+C:\Users\Xinnk\Documents\GitHub\senior-project\Install\obj\Release\Install.exe
+C:\Users\Xinnk\Documents\GitHub\senior-project\Install\obj\Release\Install.pdb
