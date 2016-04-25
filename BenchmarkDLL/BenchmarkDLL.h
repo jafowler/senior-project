@@ -11,7 +11,7 @@ extern "C" {
 #else
 #define EXPORT extern
 #endif
-	EXPORT void StartBenchmark(unsigned long time, char* physicalDrive, unsigned long packetSize);
+	EXPORT void StartBenchmark(unsigned long timer, char* physicalDrive, unsigned long packetSize, unsigned long readWriteRatio);
 	EXPORT void PrintToErrorLog();
 #undef EXPORT
 

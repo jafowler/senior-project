@@ -26,7 +26,7 @@ namespace wcfServerApp
                    ResponseFormat = WebMessageFormat.Json,
                    RequestFormat = WebMessageFormat.Json,
                    BodyStyle = WebMessageBodyStyle.WrappedRequest)]
-        void GetBenchmarkData(string physicalLocation, string time, string packetSize);
+        void GetBenchmarkData(string physicalLocation, string time, string packetSize,string readWriteRatio);
     }
 
 

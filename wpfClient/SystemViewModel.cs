@@ -15,8 +15,9 @@ namespace wpfClient
     class SystemViewModel : INotifyPropertyChanged, IDataErrorInfo
     {
         private string m_ipaddress = "192.168.0";
-        public int m_userTime = 300;
-        public int m_userPacketSize = 128;
+        public string m_userTime = "300";
+        public string m_userPacketSize = "131072";
+        public string m_sliderValue = "70";
         bool debug = false;
         public SystemViewModel()
         {
@@ -62,9 +63,7 @@ namespace wpfClient
         {
             try
             {
-                _benchmarkSettings.selectedDrive = SelectedDrive;
-                _benchmarkSettings.time = m_userTime;
-                _benchmarkSettings.packetSize = m_userPacketSize*1024;
+
                 var physLoc = SelectedDrive.physicalLoc;
 
                 var request = (HttpWebRequest)WebRequest.Create(SelectedSystem.ipAddress + ":8089/ServerApp/listener");
@@ -74,7 +73,9 @@ namespace wpfClient
                 var stream = new StreamWriter(request.GetRequestStream(), System.Text.Encoding.ASCII);
                 stream.Write("{\"physicalLocation\":\"" +
                                SelectedDrive.physicalLoc[SelectedDrive.physicalLoc.Length - 1] +
-                               "\",\"time\":\"600\",\"packetSize\":\"131072\"}");
+                               "\",\"time\":\"" + m_userTime + 
+                               "\",\"packetSize\":\"" + m_userPacketSize + 
+                               "\",\"readWriteRatio\":\"" + m_sliderValue + "\"}");
                 stream.Close();
                 var response = (HttpWebResponse)request.GetResponse();
             }
@@ -135,7 +136,22 @@ namespace wpfClient
         }
 
         public ObservableCollection<SysInfo> NetworkSystems{ get; private set; }
-        public int UserTime
+        public string SliderValue
+        {
+            get
+            {
+                return m_sliderValue;
+            }
+            set
+            {
+                if(m_sliderValue != value)
+                {
+                    m_sliderValue = value;
+                    OnPropertyChanged("SliderValue");
+                }
+            }
+        }
+        public string UserTime
         {
             get
             {
@@ -150,7 +166,7 @@ namespace wpfClient
                 }
             }
         }
-        public int UserPacketSize
+        public string UserPacketSize
         {
             get
             {

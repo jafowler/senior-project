@@ -22,8 +22,9 @@ void PrintToErrorLog()
 	printf("This is a thing");
 
 }
-void StartBenchmark(unsigned long timer, char* physicalDrive, unsigned long packetSize)
+void StartBenchmark(unsigned long timer, char* physicalDrive, unsigned long packetSize, unsigned long readWriteRatio)
 {
+	double readPercent = readWriteRatio / 100.0;
 	//create file handles
 	ostringstream convert;
 	ofstream readFile("C:\\BenchmarkDLL\\readTimes.txt");
@@ -37,6 +38,7 @@ void StartBenchmark(unsigned long timer, char* physicalDrive, unsigned long pack
 	DWORD dwBytesToWrite = packetSize;
 	DWORD dwBytesWritten = 0;
 	DWORD retVal = 0;
+	errorLog << "Read Percent: " << readPercent << endl;
 
 	
 

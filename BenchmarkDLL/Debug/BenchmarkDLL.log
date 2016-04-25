@@ -1,3 +1,5 @@
-﻿  BenchmarkDLL.cpp
+﻿  stdafx.cpp
+  BenchmarkDLL.cpp
+  dllmain.cpp
      Creating library C:\Users\Xinnk\Documents\GitHub\senior-project\Debug\BenchmarkDLL.lib and object C:\Users\Xinnk\Documents\GitHub\senior-project\Debug\BenchmarkDLL.exp
   BenchmarkDLL.vcxproj -> C:\Users\Xinnk\Documents\GitHub\senior-project\Debug\BenchmarkDLL.dll

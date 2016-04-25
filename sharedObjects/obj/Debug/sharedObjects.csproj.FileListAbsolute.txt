@@ -15,4 +15,3 @@ C:\Users\Xinnk\Documents\GitHub\senior-project\sharedObjects\bin\Debug\sharedObj
 C:\Users\Xinnk\Documents\GitHub\senior-project\sharedObjects\bin\Debug\sharedObjects.pdb
 C:\Users\Xinnk\Documents\GitHub\senior-project\sharedObjects\obj\Debug\sharedObjects.dll
 C:\Users\Xinnk\Documents\GitHub\senior-project\sharedObjects\obj\Debug\sharedObjects.pdb
-C:\Users\Xinnk\Documents\GitHub\senior-project\sharedObjects\obj\Debug\sharedObjects.csprojResolveAssemblyReference.cache
