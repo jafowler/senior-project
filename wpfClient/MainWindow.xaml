@@ -14,5 +14,4 @@
         <local:DevicesView DataContext="{Binding}" VerticalAlignment="Stretch" HorizontalAlignment="Left" Height="371" Width="236" Margin="337,0,0,1"/>
         <local:BenchmarkView HorizontalAlignment="Left" Margin="573,26,0,0" VerticalAlignment="Top" Height="336" Width="407"/>
     </Grid>
-
 </Window>

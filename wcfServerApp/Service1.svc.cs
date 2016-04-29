@@ -65,17 +65,18 @@ namespace wcfServerApp
         [DllImport(@"C:\\BenchmarkDLL\\BenchmarkDLL.dll")]
         public static extern void StartBenchmark(int timer, StringBuilder physicalDrive, int packetSize, int readWriteRatio);
 
-        [DllImport(@"C:\\BenchmarkDLL\\BenchmarkDLL.dll")]
-        public static extern void PrintToErrorLog();
-      
-
-
         public void GetBenchmarkData(string physicalLocation, string time, string packetSize, string readWriteRatio)
         {
             var physLoc = "\\\\.\\PhysicalDrive" + physicalLocation;
             var stringBuilder = new StringBuilder(physLoc);
-            System.IO.File.AppendAllText(@"C:\seniorprojectlog.txt", "\r\n"+physLoc + "\r\n" + time+"\r\n"+packetSize);
-            StartBenchmark(Int32.Parse(time), stringBuilder,Int32.Parse(packetSize),Int32.Parse(readWriteRatio));
+            System.IO.File.AppendAllText(@"C:\seniorprojectlog.txt", "\r\n"+physLoc + "\r\n" + time+"\r\n"+packetSize+"\r\n"+readWriteRatio);
+            try {
+                StartBenchmark(Int32.Parse(time), stringBuilder, Int32.Parse(packetSize), Int32.Parse(readWriteRatio));
+            }
+            catch(Exception e)
+            {
+                System.IO.File.AppendAllText(@"C:\dllErrorLog.txt", e.ToString());
+            }
             //PrintToErrorLog();
 
         } 

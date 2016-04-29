@@ -57,3 +57,5 @@ C:\Users\Xinnk\Documents\GitHub\senior-project\wpfClient\obj\Release\wpfClient.P
 C:\Users\Xinnk\Documents\GitHub\senior-project\wpfClient\obj\Release\wpfClient.csproj.GenerateResource.Cache
 C:\Users\Xinnk\Documents\GitHub\senior-project\wpfClient\obj\Release\wpfClient.exe
 C:\Users\Xinnk\Documents\GitHub\senior-project\wpfClient\obj\Release\wpfClient.pdb
+C:\Users\Xinnk\Documents\GitHub\senior-project\wpfClient\obj\Release\BenchmarkView.g.cs
+C:\Users\Xinnk\Documents\GitHub\senior-project\wpfClient\obj\Release\BenchmarkView.baml

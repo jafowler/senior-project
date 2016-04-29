@@ -1,0 +1,8 @@
+﻿  stdafx.cpp
+  BenchmarkDLL.cpp
+  dllmain.cpp
+     Creating library C:\Users\Xinnk\Documents\GitHub\senior-project\Release\BenchmarkDLL.lib and object C:\Users\Xinnk\Documents\GitHub\senior-project\Release\BenchmarkDLL.exp
+  Generating code
+  All 154 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  BenchmarkDLL.vcxproj -> C:\Users\Xinnk\Documents\GitHub\senior-project\Release\BenchmarkDLL.dll

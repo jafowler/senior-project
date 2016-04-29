@@ -9,6 +9,8 @@ using System.ComponentModel;
 using System.Collections.ObjectModel;
 using System.Windows;
 using System.IO;
+using System.Threading;
+using System.Windows.Input;
 
 namespace wpfClient
 {
@@ -16,9 +18,11 @@ namespace wpfClient
     {
         private string m_ipaddress = "192.168.0";
         public string m_userTime = "300";
-        public string m_userPacketSize = "131072";
+        public string m_userPacketSize = "18161966";
         public string m_sliderValue = "70";
+        public bool isEnabled = true;
         bool debug = false;
+
         public SystemViewModel()
         {
             NetworkSystems = new ObservableCollection<SysInfo>();
@@ -47,14 +51,15 @@ namespace wpfClient
                 NetworkSystems.Add(tempSys1);
                 NetworkSystems.Add(tempSys2);
             }
-#endregion
+            #endregion
             var uiScheduler = TaskScheduler.FromCurrentSynchronizationContext();
-            Refresh = new AsyncCommand(()=>asyncGetNetworkSystems());
-            BenchmarkData = new AsyncCommand(()=> asyncSendBenchmarkData());   
+            Refresh = new AsyncCommand(() => asyncGetNetworkSystems());
+            BenchmarkData = new AsyncCommand(() => asyncSendBenchmarkData());
         }
 
         public async Task asyncSendBenchmarkData()
         {
+
             var task = Task.Factory.StartNew(() => SendData());
             await task;
         }
@@ -63,9 +68,7 @@ namespace wpfClient
         {
             try
             {
-
                 var physLoc = SelectedDrive.physicalLoc;
-
                 var request = (HttpWebRequest)WebRequest.Create(SelectedSystem.ipAddress + ":8089/ServerApp/listener");
                 Trace.WriteLine(SelectedSystem.ipAddress + ":8089/ServerApp/listener");
                 request.Method = "POST";
@@ -73,13 +76,13 @@ namespace wpfClient
                 var stream = new StreamWriter(request.GetRequestStream(), System.Text.Encoding.ASCII);
                 stream.Write("{\"physicalLocation\":\"" +
                                SelectedDrive.physicalLoc[SelectedDrive.physicalLoc.Length - 1] +
-                               "\",\"time\":\"" + m_userTime + 
-                               "\",\"packetSize\":\"" + m_userPacketSize + 
+                               "\",\"time\":\"" + m_userTime +
+                               "\",\"packetSize\":\"" + m_userPacketSize +
                                "\",\"readWriteRatio\":\"" + m_sliderValue + "\"}");
                 stream.Close();
                 var response = (HttpWebResponse)request.GetResponse();
             }
-            catch(Exception e)
+            catch (Exception e)
             {
                 Trace.WriteLine(e);
             }
@@ -88,7 +91,9 @@ namespace wpfClient
 
         public async Task asyncGetNetworkSystems()
         {
+
             NetworkSystems.Clear();
+            IsEnabled = false;
             var task = Task.Factory.StartNew(() => parallelIPScan());
             await task;
         }
@@ -96,25 +101,40 @@ namespace wpfClient
 
         public void parallelIPScan()
         {
-            Parallel.For(230, 231,
+            
+            Parallel.For(1, 255,
                    index => {
                        var retval = getActiveSystemInformation("http://" + m_ipaddress + "." + index);
                        if (retval != null && retval.myDrives.Count != 0)
                        {
-                           retval.ipAddress = "http://"+ m_ipaddress + "." + index;
+                           retval.ipAddress = "http://" + m_ipaddress + "." + index;
                            Application.Current.Dispatcher.Invoke(() =>
                            {
                                NetworkSystems.Add(retval);
+
                            });
                        }
                    });
+            IsEnabled = true;
+
         }
 
+        public bool IsEnabled
+        {
+            get
+            {
+                return isEnabled;
+            }
+            set
+            {
+                isEnabled = value;
+                OnPropertyChanged("IsEnabled");
+            }
+        }
         public BenchmarkSettings _benchmarkSettings = new BenchmarkSettings();
         public delegate void UpdateTextCallback(List<SysInfo> tempList);
         public IAsyncCommand Refresh { get; set; }
         public IAsyncCommand BenchmarkData { get; set; }
-
         public SysInfo getActiveSystemInformation(string ipAddress)
         {
             try
@@ -134,7 +154,6 @@ namespace wpfClient
                 return null;
             }
         }
-
         public ObservableCollection<SysInfo> NetworkSystems{ get; private set; }
         public string SliderValue
         {
@@ -196,14 +215,6 @@ namespace wpfClient
                 }
             }
         }
-        public event PropertyChangedEventHandler PropertyChanged;
-        protected void OnPropertyChanged(string propertyName)
-        {
-            if (PropertyChanged != null)
-            {
-                PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-            }
-        }
         public string Error
         {
             get { return "The field cannot be empty!"; }
@@ -215,9 +226,14 @@ namespace wpfClient
                 throw new NotImplementedException();
             }
         }
-
-        
-
+        public event PropertyChangedEventHandler PropertyChanged;
+        protected void OnPropertyChanged(string propertyName)
+        {
+            if (PropertyChanged != null)
+            {
+                PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+            }
+        }
         public SysInfo _SelectedSystem = new SysInfo();
         public SysInfo SelectedSystem {
             get
@@ -230,7 +246,6 @@ namespace wpfClient
                 OnPropertyChanged("SelectedSystem");
             }
         }
-
         public Drive _SelectedDrive = new Drive();
         public Drive SelectedDrive
         {
@@ -245,7 +260,5 @@ namespace wpfClient
             }
         }
     
-    }
-    
-        
+    }     
 }

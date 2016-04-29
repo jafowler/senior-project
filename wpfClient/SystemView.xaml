@@ -25,6 +25,7 @@
         </ListView>
         <Button x:Name="button" 
                 Content="Refresh" 
+                IsEnabled="{Binding IsEnabled}"
                 HorizontalAlignment="Left" 
                 Margin="256,324,0,10" 
                 Width="75" 

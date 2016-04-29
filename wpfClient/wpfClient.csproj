@@ -74,10 +74,12 @@
     <Compile Include="BenchmarkView.xaml.cs">
       <DependentUpon>BenchmarkView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="CancelAsyncCommand.cs" />
     <Compile Include="DevicesView.xaml.cs">
       <DependentUpon>DevicesView.xaml</DependentUpon>
     </Compile>
     <Compile Include="IAsyncCommand.cs" />
+    <Compile Include="NotifyTaskCompletion.cs" />
     <Compile Include="SystemView.xaml.cs">
       <DependentUpon>SystemView.xaml</DependentUpon>
     </Compile>
